@@ -8,22 +8,6 @@ function getInitialTheme() {
   return window.matchMedia?.("(prefers-color-scheme: light)").matches ?? false;
 }
 
-  // Active nav link highlight
-  const sections = ['home', 'projects','skills','about','contact'];
-  const options = { rootMargin: '-40% 0px -55% 0px', threshold: 0 };
-  const observer = new IntersectionObserver((entries)=>{
-    entries.forEach(entry => {
-      const id = entry.target.id;
-      const link = document.querySelector(`.nav a[href="#${id}"]`);
-      if (!link) return;
-      if (entry.isIntersecting) {
-        document.querySelectorAll('.nav a').forEach(a => a.classList.remove('active'));
-        link.classList.add('active');
-      }
-    })
-  }, options);
-  sections.forEach(id=>{ const el = document.getElementById(id); if(el) observer.observe(el); });
-
 const Navbar = () => {
 
   const [isLight, setIsLight] = useState(getInitialTheme);
@@ -34,9 +18,32 @@ const Navbar = () => {
     document.getElementById('themeLabel').textContent = isLight ? 'Light' : 'Dark';
     document.getElementById('sun').style.display = isLight ? '' : 'none';
     document.getElementById('moon').style.display = isLight ? 'none' : '';
-    // localStorage.setItem("theme", isLight ? "light" : "dark");
   }, [isLight]);
 
+ // Active nav link highlight
+  useEffect(() => {
+    const ids = ['home', 'projects', 'skills', 'about', 'contact'];
+    const options = { rootMargin: '-40% 0px -55% 0px', threshold: 0 };
+
+    const io = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        const id = entry.target.id;
+        const link = document.querySelector(`header.nav a[href="#${id}"]`);
+        if (!link) continue;
+        if (entry.isIntersecting) {
+          document.querySelectorAll('header.nav a').forEach(a => a.classList.remove('active'));
+          link.classList.add('active');
+        }
+      }
+    }, options);
+
+    ids.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) io.observe(el);
+    });
+
+    return () => io.disconnect();
+  }, []);
 
 // Current year
 // document.getElementById('year').textContent = new Date().getFullYear();
@@ -52,7 +59,7 @@ const Navbar = () => {
       >
         <div className="text-xl max-w-[1100px] mx-auto px-[1.2rem]">
           <div className="flex items-center justify-between py-[.85rem]">
-            <a href="#home" className="flex items-center gap-[.6rem] font-extrabold tracking-[.4px] text-[var(--text)]" aria-label="Go to home">
+            <a href="#home" className="active flex text-3xl items-center gap-[.6rem] font-extrabold tracking-[.4px] text-[var(--text)]" aria-label="Go to home">
               <span>CE</span>
             </a>
 
