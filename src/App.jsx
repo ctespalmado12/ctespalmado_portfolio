@@ -12,11 +12,14 @@ function App() {
     <>
       <div className="bgtrans">
           <Navbar/>
-          <Home/>
-          <Projects/>
-          <Skills/>
-          <About/>
-          <Contact/>
+          <div className='page-content'>
+            <Home/>
+            <About/>
+            <Projects/>
+            <Skills/>
+            <Contact/>
+          </div>
+          
       </div>
 
     </>
