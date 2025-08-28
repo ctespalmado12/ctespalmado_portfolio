@@ -1,6 +1,7 @@
 import React from 'react'
 import CircularText from '../components/react-bits/circulattext'
 import DecryptedText from '../components/react-bits/decryptedtext';
+import AnimatedContent from '../components/react-bits/animatedcontent'
 import { Github } from 'lucide-react';
 import { Linkedin } from 'lucide-react';
 
@@ -47,12 +48,40 @@ const Home = () => {
                 </div>
 
                 <div className='col-12 flex items-center justify-center'>
-                    <a href="" className="border border-[rgb(128,128,128)] rounded-full flex items-center justify-center leading-[50px] p-2 m-[0.6rem]">
-                        <Github size={30} strokeWidth={1.5} />
-                    </a>
-                    <a href="" className="border border-[rgb(128,128,128)] rounded-full flex items-center justify-center leading-[50px] p-2 m-[0.6rem]">
-                        <Linkedin size={33} strokeWidth={1.5}  />
-                    </a>
+                <AnimatedContent
+                    distance={100}
+                    direction="vertical"
+                    reverse={false}
+                    duration={1.2}
+                    ease="power3.out"
+                    initialOpacity={0.01}
+                    animateOpacity
+                    scale={1.1}
+                    threshold={0}
+                    delay={0.3}
+                >
+                    <div className="flex flex-row items-center justify-center gap-3">
+                        <a
+                            href=""
+                            className="border border-[rgb(128,128,128)] rounded-full flex items-center justify-center p-2 m-[0.6rem]"
+                        >
+                            <Github
+                            className="w-[25px] h-[25px] md:w-[30px] md:h-[30px]"
+                            strokeWidth={1.5}
+                            />
+                        </a>
+                        <a
+                            href=""
+                            className="border border-[rgb(128,128,128)] rounded-full flex items-center justify-center p-2 m-[0.6rem]"
+                        >
+                            <Linkedin
+                            className="w-[28px] h-[28px] md:w-[33px] md:h-[33px]"
+                            strokeWidth={1.5}
+                            />
+                        </a>
+                    </div>
+                    
+                </AnimatedContent>
                 </div>
             </div>
                       
