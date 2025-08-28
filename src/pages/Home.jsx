@@ -65,7 +65,7 @@ const Home = () => {
                     >
                         <div className="flex flex-row items-center justify-center gap-3">
                             <a
-                                href=""
+                                href="https://github.com/ctespalmado12" target="_blank" rel="noopener noreferrer"
                                 className="border border-[rgb(128,128,128)] rounded-full flex items-center justify-center p-2 m-[0.6rem]"
                             >
                                 <Github
@@ -74,7 +74,7 @@ const Home = () => {
                                 />
                             </a>
                             <a
-                                href=""
+                                href="https://ph.linkedin.com/in/clarisse-espalmado-2aa512238" target="_blank" rel="noopener noreferrer"
                                 className="border border-[rgb(128,128,128)] rounded-full flex items-center justify-center p-2 m-[0.6rem]"
                             >
                                 <Linkedin
