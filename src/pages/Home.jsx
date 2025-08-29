@@ -11,7 +11,7 @@ const Home = () => {
         <section id='home' className='min-h-screen'>
             <div className=''>
                 <div className='row pl-[20px] pr-[5px] pt-10 md:pl-[45px] md:pr-[5px] md:pt-20 lg:pl-[65px] lg:pr-[20px] lg:pt-40 xl:pl-[305px] xl:pr-[200px] xl:pt-40'>
-                    <div className='flex flex-col col-9'>
+                    <div className='flex flex-col col-span-9'>
                         <span className='lg:text-[100px] md:text-[80px] text-[35px] font-bold leading-[1.2]'>
                             <DecryptedText
                             text="Hi, I'm"
@@ -38,7 +38,7 @@ const Home = () => {
                             delay={10000}/>
                         </span>
                     </div>
-                    <div className='col-3'>
+                    <div className='col-span-3'>
                         <CircularText
                         text="scroll down*scroll down*"
                         onHover="speedUp"
