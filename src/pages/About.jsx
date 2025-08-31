@@ -44,20 +44,23 @@ const About = () => {
                   
               </span>
               <br />
-              <span className='lg:text-2xl md:text-[15px] text-[12px] font-semibold animate-[text-animation_1s_ease-in-out_0s_1_normal_none_running]'>
+              <span className='lg:text-xl md:text-[15px] text-[12px] font-semibold animate-[text-animation_1s_ease-in-out_0s_1_normal_none_running]'>
                   {inView &&(
                     <DecryptedText
-                    text="I have been working in the tech industry for over a year. Let's connect."
+                    text="Highly motivated Backend Developer with 2 years of hands-on experience in PHP Laravel, JavaScript (jQuery), and MySQL, seeking a challenging role to contribute to the development of reliable and scalable web applications. Skilled in backend development, bug resolution, and dynamic web-based reporting. Currently expanding frontend capabilities through self-learning and hands-on practice with Tailwind CSS and React.js, while continuously improving knowledge in modern development practices and backend optimization. Let's connect."
                     animateOn="view"
                     revealDirection="start"
                     sequential="true"
-                    speed={5}
+                    speed={10}
                     />
                   )}
                   
               </span>
               <div className=''>
-                <button class="flex lg:text-2xl md:text-[15px] text-[12px] font-semibold animate-[text-animation_1s_ease-in-out_0s_1_normal_none_running] items-center gap-2 rounded-[20px] px-5 py-2 cursor-pointer transition duration-300 overflow-hidden">My Resume<ArrowUpRight className="w-4 h-4" /></button>
+                <button class="flex items-center whitespace-nowrap  gap-[.45rem] px-[.9rem] py-[.6rem] rounded-full font-semibold
+                        border [border-color:color-mix(in_oklab,_var(--text)_12%,_transparent)]
+                        bg-[color-mix(in_oklab,_var(--panel)_90%,_transparent)]
+                        text-[var(--text)] hover:[box-shadow:var(--ring)]">My Resume<ArrowUpRight className="w-4 h-4" /></button>
               </div>
             </div>
           </div>
