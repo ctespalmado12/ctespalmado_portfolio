@@ -3,9 +3,12 @@ import CircularText from '../components/react-bits/circulattext'
 import DecryptedText from '../components/react-bits/decryptedtext';
 import AnimatedContent from '../components/react-bits/animatedcontent'
 import { Github } from 'lucide-react';
+import { useInView } from "react-intersection-observer";
 import { Linkedin } from 'lucide-react';
 
 const Home = () => {
+
+const { ref: socialsRef, inView: socialsIn } = useInView({ triggerOnce: false, threshold: 0.2 });
   return (
     <>
         <section id='home' className='min-h-screen'>
@@ -50,8 +53,9 @@ const Home = () => {
                     
                     
                 </div>
-                <div className=' flex items-end justify-center absolute bottom-10 left-0 w-full'>
+                <div ref={socialsRef} className=' flex items-end justify-center absolute bottom-10 left-0 w-full'>
                     <AnimatedContent
+                        key={socialsIn ? "in" : "out"}
                         distance={100}
                         direction="vertical"
                         reverse={false}
@@ -66,7 +70,7 @@ const Home = () => {
                         <div className="flex flex-row items-center justify-center gap-3">
                             <a
                                 href="https://github.com/ctespalmado12" target="_blank" rel="noopener noreferrer"
-                                className="border border-[rgb(128,128,128)] rounded-full flex items-center justify-center p-2 m-[0.6rem]"
+                                className="border border-[rgb(128,128,128)] rounded-full flex items-center justify-center p-2 m-[0.6rem]  hover:[box-shadow:var(--ring)]"
                             >
                                 <Github
                                 className="w-[25px] h-[25px] md:w-[30px] md:h-[30px]"
@@ -75,7 +79,7 @@ const Home = () => {
                             </a>
                             <a
                                 href="https://ph.linkedin.com/in/clarisse-espalmado-2aa512238" target="_blank" rel="noopener noreferrer"
-                                className="border border-[rgb(128,128,128)] rounded-full flex items-center justify-center p-2 m-[0.6rem]"
+                                className="border border-[rgb(128,128,128)] rounded-full flex items-center justify-center p-2 m-[0.6rem]  hover:[box-shadow:var(--ring)]"
                             >
                                 <Linkedin
                                 className="w-[28px] h-[28px] md:w-[33px] md:h-[33px]"
