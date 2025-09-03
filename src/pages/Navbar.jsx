@@ -19,6 +19,8 @@ const Navbar = () => {
     document.getElementById('themeLabel').textContent = isLight ? 'Light' : 'Dark';
     document.getElementById('sun').style.display = isLight ? '' : 'none';
     document.getElementById('moon').style.display = isLight ? 'none' : '';
+    document.getElementById('lightGithub').style.display = isLight ? '' : 'none';
+    document.getElementById('darkGithub').style.display = isLight ? 'none' : '';
   }, [isLight]);
 
  // Active nav link highlight
