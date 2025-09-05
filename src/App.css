@@ -8,6 +8,7 @@
   --brand: #22d3ee; /* cyan-400 */
   --brand-ink: #0ea5e9; /* sky-500 */
   --ring: 0 0 0 3px rgba(34,211,238,.35);
+  --exp-bg: #39445cb5;
 }
 :root.light{
   --bg: #f8fafc;
@@ -16,6 +17,7 @@
   --muted: #475569;
   --brand: #0ea5e9; /* sky-500 */
   --brand-ink: #0284c7; /* sky-600 */
+  --exp-bg: #f8fafce9;
 }
 
 html,body{
@@ -23,7 +25,8 @@ html,body{
 }
 
 *{
-  box-sizing:border-box
+  box-sizing:border-box;
+  scrollbar-width:thin;
 }
 
 .page-content{
@@ -51,25 +54,29 @@ body{
 
 .nav a.active { color: var(--brand); opacity: 1 }
 
-.row { @apply grid grid-cols-12 gap-4; }
-
-.col-1  { @apply col-span-1; }
-.col-2  { @apply col-span-2; }
-.col-3  { @apply col-span-3; }
-.col-4  { @apply col-span-4; }
-.col-5  { @apply col-span-5; }
-.col-6  { @apply col-span-6; }
-.col-7  { @apply col-span-7; }
-.col-8  { @apply col-span-8; }
-.col-9  { @apply col-span-9; }
-.col-10 { @apply col-span-10; }
-.col-11 { @apply col-span-11; }
-.col-12 { @apply col-span-12; }
 
 .circular-text text {
   @apply text-[20px];
 }
 
-.decrypted-text span {
+/* .decrypted-text span {
   @apply inline 
+} */
+
+
+.timeline-container{
+  @apply flex flex-col relative m-10
+}
+
+
+.timeline-container::after {
+  @apply bg-[var(--brand)] content-[''] absolute left-[calc(50%-2px)] w-1 h-[100%]
+}
+
+.timelineItems{
+  @apply flex justify-end pl-[30px] relative m-2.5 w-[50%]
+}
+
+.timelineItems::nth-child(odd){
+  @apply self-end justify-start pl-[30px] pr-0
 }

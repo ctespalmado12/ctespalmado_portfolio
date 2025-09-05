@@ -6,18 +6,20 @@ import Home from './pages/Home'
 import Skills from './pages/Skills'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import Timeline from './pages/drafts/Timeline'
 function App() {
 
   return (
     <>
       <div className="bgtrans">
           <Navbar/>
-          <div className='page-content'>
+          <div>
             <Home/>
             <About/>
-            <Projects/>
-            <Skills/>
-            <Contact/>
+            {/* <Timeline/> */}
+            {/* <Projects/> */}
+            {/* <Skills/> */}
+            {/* <Contact/> */}
           </div>
           
       </div>

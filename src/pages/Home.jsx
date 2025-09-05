@@ -3,36 +3,35 @@ import CircularText from '../components/react-bits/circulattext'
 import DecryptedText from '../components/react-bits/decryptedtext';
 import AnimatedContent from '../components/react-bits/animatedcontent'
 import { Github } from 'lucide-react';
-import { useInView } from "react-intersection-observer";
+// import { useInView } from "react-intersection-observer";
 import { Linkedin } from 'lucide-react';
 
 const Home = () => {
 
-const { ref: socialsRef, inView: socialsIn } = useInView({ triggerOnce: false, threshold: 0.2 });
   return (
     <>
-        <section id='home' className='min-h-screen'>
-            <div className=''>
-                <div className='row pl-[20px] pr-[5px] pt-10 md:pl-[45px] md:pr-[5px] md:pt-20 lg:pl-[65px] lg:pr-[20px] lg:pt-40 xl:pl-[305px] xl:pr-[200px] xl:pt-40'>
-                    <div className='flex flex-col col-span-9'>
-                        <span className='lg:text-[100px] md:text-[80px] text-[35px] font-bold leading-[1.2]'>
+        <section id='home' className='min-h-screen overflow-x-hidden'>
+            <div className='w-full mx-auto px-5 sm:px-8 lg:px-16 xl:px-24 py-16 sm:py-24'>
+                 <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 px-5 sm:px-8 lg:px-16 xl:px-24 2xl:px-0 2xl:max-w-[1400px] 2xl:mx-auto'>
+                    <div className='flex flex-col'>
+                        <span className='text-[40px] lg:text-[100px] md:text-[80px] font-bold leading-[1.2]'>
                             <DecryptedText
                             text="Hi, I'm"
                             animateOn="view"
                             revealDirection="start"
                             sequential="true"
-                            className='sm:text-[100px]'/>
+                            className=''/>
                         </span>
-                        <span className='decrypted-text text-[35px] lg:text-[100px] md:text-[80px] font-bold leading-[1.2]'>
+                        <span className='inline text-[40px] lg:text-[100px] md:text-[80px] font-bold leading-[1.2]'>
                             <DecryptedText
                             text="Clarisse Espalmado."
                             animateOn="view"
                             revealDirection="start"
                             sequential="true"
                             delay={100000}
-                            className='whitespace-nowrap'/>
+                            className='whitespace-normal 2xl:whitespace-nowrap'/>
                         </span>
-                        <span className='lg:text-2xl md:text-[15px] text-[12px] font-semibold text-[rgb(144,144,144)] animate-[text-animation_1s_ease-in-out_0s_1_normal_none_running]'>
+                        <span className='lg:text-[35px]  md:text-[25px] text-[19px] font-semibold text-[rgb(144,144,144)] animate-[text-animation_1s_ease-in-out_0s_1_normal_none_running]'>
                             <DecryptedText
                             text="Nice to meet you!"
                             animateOn="view"
@@ -41,22 +40,25 @@ const { ref: socialsRef, inView: socialsIn } = useInView({ triggerOnce: false, t
                             delay={10000}/>
                         </span>
                     </div>
-                    <div className='col-span-3'>
-                        <CircularText
-                        text="scroll down*scroll down*"
-                        onHover="speedUp"
-                        spinDuration={10}
-                        direction="counterClockwise" 
-                        className='sm:flex lg:scale-[.9] md:scale-[.7] hidden items-center justify-center'
-                        />
+                    <div className='flex flex-col items-center justify-center overflow-hidden'>
+                         <div className="max-w-full w-full flex items-center justify-center">
+                            <CircularText
+                            text="scroll down*scroll down*"
+                            onHover="speedUp"
+                            spinDuration={10}
+                            direction="counterClockwise" 
+                            className='max-w-full hidden sm:flex sm:scale-[.6] md:scale-[.7] lg:scale-[.9]'
+                            />
+                         </div>
+                        
                     </div>
                     
                     
                 </div>
-                <div ref={socialsRef} className=' flex items-end justify-center absolute bottom-10 left-0 w-full'>
+                <div className=' flex items-end justify-center absolute bottom-10 left-0 w-full'>
                     <AnimatedContent
-                        key={socialsIn ? "in" : "out"}
-                        distance={100}
+                        once={false}  
+                        distance={20}
                         direction="vertical"
                         reverse={false}
                         duration={1.2}
