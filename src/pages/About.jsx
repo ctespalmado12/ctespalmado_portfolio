@@ -3,12 +3,11 @@ import AnimatedContent from "../components/react-bits/animatedcontent";
 import DecryptedText from "../components/react-bits/decryptedtext";
 import { ArrowUpRight } from "lucide-react";
 import Resume from "../assets/CTE-Resume-2025.pdf";
-import Timeline from "./drafts/Timeline";
-import Timeline1 from "./Timeline1";
+import { ScrollTimeline } from "../components/lightswind/scroll-timeline"
 
-const About = () => {
+const About = ({isLight}) => {
 
-  // Safer, memoized download handler
+    // Safer, memoized download handler
   const dlresume = useCallback(() => {
     const link = document.createElement("a");
     link.href = Resume;
@@ -17,6 +16,46 @@ const About = () => {
     link.click();
     link.remove();
   }, []);
+
+
+  const events = [
+    {
+        year: '2019 - 2022',
+        title: 'Diploma in Information Communication Technology',
+        subtitle: 'Polytechnic University of the Philippines',
+        bullets: [
+          ''
+        ]
+    },
+    {
+        year: 'May 2022 - Jul 2022',
+        title: 'Intern at ZenGages',
+        subtitle: 'Website Testing and Improvement',
+        bullets: [
+          "Laravel/MySQL HRIS features, bug fixes, customizable reports, optimized stored procedures, GitHub collaboration.",
+          "Laravel/MySQL HRIS features, bug fixes, customizable reports, optimized stored procedures, GitHub collaboration.",
+          "Laravel/MySQL HRIS features, bug fixes, customizable reports, optimized stored procedures, GitHub collaboration."
+        ]
+    },
+    {
+        year: 'Oct 2023 - Present',
+        title: 'Junior Web Developer',
+        subtitle: 'One Document Corporation',
+        bullets: [
+          "Cross-device/cross-browser QA, UI/UX bug reproduction & docs, daily stand-ups, DevTools debugging."
+        ]
+    },
+    {
+        year: 'Oct 2023 - Present',
+        title: 'Junior Web Developer',
+        subtitle: 'One Document Corporation',
+        bullets: [
+          "Cross-device/cross-browser QA, UI/UX bug reproduction & docs, daily stand-ups, DevTools debugging."
+        ]
+    },
+  
+    
+]
 
   return (
     <section id="about" className="min-h-auto">
@@ -111,20 +150,25 @@ const About = () => {
               </div>
             </div>
          
+         
         </div>
 
-        {/* Experience */}
-        <div className="pt-72">
-            <div className="grid grid-cols-1 content-center text-center">
-              <div className="">
-                <h1 className="text-3xl">Experience</h1>
-              </div>
-            </div>
-            <div>
-              <Timeline1/>
-            </div>
+        <div className="relative">
+            <ScrollTimeline 
+              events={events}
+              title="My Journey"
+              subtitle=""
+              progressIndicator={true}
+              cardAlignment="alternating"
+              revealAnimation="fade"
+              connectorStyle = "dashed"
+              // className="relative z-10"
+            />
         </div>
+        
+      
       </div>
+
     </section>
   );
 };

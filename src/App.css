@@ -1,4 +1,5 @@
 @reference "tailwindcss";
+/* @reference 'lightswind/plugin'; */
 
 :root{
   --bg: #0b1220;
@@ -63,20 +64,3 @@ body{
   @apply inline 
 } */
 
-
-.timeline-container{
-  @apply flex flex-col relative m-10
-}
-
-
-.timeline-container::after {
-  @apply bg-[var(--brand)] content-[''] absolute left-[calc(50%-2px)] w-1 h-[100%]
-}
-
-.timelineItems{
-  @apply flex justify-end pl-[30px] relative m-2.5 w-[50%]
-}
-
-.timelineItems::nth-child(odd){
-  @apply self-end justify-start pl-[30px] pr-0
-}

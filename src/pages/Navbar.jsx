@@ -1,27 +1,10 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import React from 'react'
 import { Moon } from "lucide-react";
 import { Sun } from "lucide-react";
-// Theme toggle with prefers-color-scheme + localStorage
-function getInitialTheme() {
-  const saved = localStorage.getItem("theme");
-  if (saved) return saved === "light";
-  return window.matchMedia?.("(prefers-color-scheme: light)").matches ?? false;
-}
 
-const Navbar = () => {
+const Navbar = ({isLight, setIsLight}) => {
 
-  const [isLight, setIsLight] = useState(getInitialTheme);
-
-  useEffect(() => {
-    const root = document.documentElement;
-    root.classList.toggle("light", isLight);
-    document.getElementById('themeLabel').textContent = isLight ? 'Light' : 'Dark';
-    document.getElementById('sun').style.display = isLight ? '' : 'none';
-    document.getElementById('moon').style.display = isLight ? 'none' : '';
-    // document.getElementById('lightGithub').style.display = isLight ? '' : 'none';
-    // document.getElementById('darkGithub').style.display = isLight ? 'none' : '';
-  }, [isLight]);  
  // Active nav link highlight
   useEffect(() => {
     const ids = ['home', 'projects', 'skills', 'about', 'contact'];
