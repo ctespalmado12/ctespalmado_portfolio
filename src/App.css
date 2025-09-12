@@ -9,7 +9,7 @@
   --brand: #22d3ee; /* cyan-400 */
   --brand-ink: #0ea5e9; /* sky-500 */
   --ring: 0 0 0 3px rgba(34,211,238,.35);
-  --exp-bg: #39445cb5;
+  --skills-bg: #0d0d0fe6;
 }
 :root.light{
   --bg: #f8fafc;
@@ -18,7 +18,7 @@
   --muted: #475569;
   --brand: #0ea5e9; /* sky-500 */
   --brand-ink: #0284c7; /* sky-600 */
-  --exp-bg: #f8fafce9;
+  --skills-bg: #f8fafce0;
 }
 
 html,body{
@@ -63,4 +63,11 @@ body{
 /* .decrypted-text span {
   @apply inline 
 } */
+
+.skills-badges{
+  background-color: var(--skills-bg);
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+}
 

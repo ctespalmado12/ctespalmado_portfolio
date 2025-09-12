@@ -6,7 +6,6 @@ import Home from './pages/Home'
 import Skills from './pages/Skills'
 import About from './pages/About'
 import Contact from './pages/Contact'
-import Timeline from './pages/drafts/Timeline'
 import { useEffect, useState } from "react";
 
 // Theme toggle with prefers-color-scheme + localStorage
@@ -28,8 +27,8 @@ function App() {
     document.getElementById('themeLabel').textContent = isLight ? 'Light' : 'Dark';
     document.getElementById('sun').style.display = isLight ? '' : 'none';
     document.getElementById('moon').style.display = isLight ? 'none' : '';
-    document.getElementById('lightGithub').style.display = isLight ? '' : 'none';
-    document.getElementById('darkGithub').style.display = isLight ? 'none' : '';
+    document.getElementById('lightGithub').style.display = isLight ? 'none' : '';
+    document.getElementById('darkGithub').style.display = isLight ? '' : 'none';
   }, [isLight]);
 
   return (
