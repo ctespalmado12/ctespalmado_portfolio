@@ -1,6 +1,9 @@
 // import React from 'react'
 import { HTML5, CSS, Bootstrap5, TailwindCSS, JavaScript, PHP, Laravel, JQuery, MySQL, React, GitHubLight, GitHubDark, Postman, Git, VisualStudioCode } from "developer-icons";
-import { Cpu, FileCode2 } from "lucide-react";
+import { Cpu, FileCode2, Sticker } from "lucide-react";
+import { cn } from "../components/lib/utils";
+import AnimatedContent from "../components/react-bits/animatedcontent";
+
 const Skills = () => {
   
   // skills.js(x)
@@ -30,33 +33,151 @@ const skills = {
     { name: "Git",     logo: <Git size={37}/> },
     { name: "VSCode",     logo: <VisualStudioCode size={37}/> },
   ],
+  softSkills: [
+    { name: "Communication Skills",      logo: "" },
+    { name: "Problem Solving Skills",        logo: "" },
+  ],
 };
 
   return (
     <>
-        <section id='skills' className="min-h-screen py-16 sm:py-24">
-          <div className="grid justify-center items-center gap-1.5 space-y-1.5">
-            <div className="">
-              <h3 className="flex mb-2 font-semibold gap-1.5"><FileCode2 strokeWidth={1.5} />Frontend</h3>
-              <div className="gap-2 grid grid-cols-5 md:grid-cols-4 xl:grid-cols-6">
-                {skills.front.map(({ name, logo }, i) => (
-                  <div key={name + i} className="skills-badges flex flex-row gap-5 rounded-full border text-xl m-2">
-                    <span>{logo}</span>
-                    <span className="hidden sm:flex">{name}</span>
-                  </div>
-                ))}
+        <section id='skills' className="min-h-screen">
+          <div className="w-full mx-auto px-5 sm:px-8 lg:px-16 xl:px-24 py-16 sm:py-24">
+            <div className="grid justify-center items-center gap-8 space-y-1.5">
+              <div className="">
+                <AnimatedContent
+                  once={false}  
+                  distance={15}
+                  direction="horizontal"
+                  reverse={true}
+                  duration={1.2}
+                  ease="power3.out"
+                  initialOpacity={0}
+                  animateOpacity
+                  scale={1.02}
+                >
+                  <h3 className="flex mb-2 font-semibold gap-1.5"><FileCode2 strokeWidth={1.5} />Frontend</h3>
+                </AnimatedContent>
+                <AnimatedContent
+                    once={false} 
+                    direction="vertical"
+                    reverse={false}
+                    duration={1.2}
+                    ease="power3.out"
+                    initialOpacity={0.0}
+                    animateOpacity
+                    scale={1.02}
+                >
+                    <div className="gap-2 grid grid-cols-5 md:grid-cols-4 xl:grid-cols-6">
+                        {skills.front.map(({ name, logo }, i) => (
+                          <div key={name + i} className={cn( 
+                            "skills-badges group relative flex items-center gap-3 rounded-2xl",
+                            "px-3.5 py-2.5 shadow-sm border border-slate-200",
+                            // interactive feel
+                            "transition-all duration-200",
+                            "hover:shadow-lg hover:-translate-y-0.5",
+                            "active:translate-y-0 active:shadow-sm",
+                            // thin ring on hover
+                            "hover:ring-1 hover:ring-sky-400/40 dark:hover:ring-sky-300/30"
+                              )}
+                              title={name}>
+                                <span>{logo}</span>
+                                <span className="font-medium hidden sm:flex">{name}</span>
+                          </div>
+                        ))}
+                    </div>
+                </AnimatedContent>
               </div>
-            </div>
 
-            <div className="">
-              <h3 className="flex mb-2 font-semibold gap-1.5"><Cpu strokeWidth={1.5} />Backend & System</h3>
-              <div className="gap-2 grid grid-cols-5 md:grid-cols-4 xl:grid-cols-6">
-                {skills.back.map(({ name, logo }, i) => (
-                  <div key={name + i} className="skills-badges flex flex-row gap-5 rounded-full border text-xl m-2">
-                    <span>{logo}</span>
-                    <span className="hidden sm:flex">{name}</span>
-                  </div>
-                ))}
+              <div className="">
+                <AnimatedContent
+                  once={false}  
+                  distance={15}
+                  direction="horizontal"
+                  reverse={true}
+                  duration={1.2}
+                  ease="power3.out"
+                  initialOpacity={0}
+                  animateOpacity
+                  scale={1.02}
+                >
+                  <h3 className="flex mb-2 font-semibold gap-1.5"><Cpu strokeWidth={1.5} />Backend & System</h3>
+                </AnimatedContent>
+                
+                <AnimatedContent
+                    once={false} 
+                    direction="vertical"
+                    reverse={false}
+                    duration={1.2}
+                    ease="power3.out"
+                    initialOpacity={0.0}
+                    animateOpacity
+                    scale={1.02}
+                >
+                    <div className="gap-2 grid grid-cols-5 md:grid-cols-4 xl:grid-cols-6">
+                        {skills.back.map(({ name, logo }, i) => (
+                          <div key={name + i} className={cn( 
+                            "skills-badges group relative flex items-center gap-3 rounded-2xl",
+                            "px-3.5 py-2.5 shadow-sm border border-slate-200",
+                            // interactive feel
+                            "transition-all duration-200",
+                            "hover:shadow-lg hover:-translate-y-0.5",
+                            "active:translate-y-0 active:shadow-sm",
+                            // thin ring on hover
+                            "hover:ring-1 hover:ring-sky-400/40 dark:hover:ring-sky-300/30"
+                              )}
+                              title={name}>
+                                <span>{logo}</span>
+                                <span className="font-medium hidden sm:flex">{name}</span>
+                          </div>
+                        ))}
+                    </div>
+                </AnimatedContent>
+              </div>
+
+              <div className="">
+                <AnimatedContent
+                  once={false}  
+                  distance={15}
+                  direction="horizontal"
+                  reverse={true}
+                  duration={1.2}
+                  ease="power3.out"
+                  initialOpacity={0}
+                  animateOpacity
+                  scale={1.02}
+                >
+                  <h3 className="flex mb-2 font-semibold gap-1.5"><Sticker strokeWidth={1.5} />Soft Skills</h3>
+                </AnimatedContent>
+                <AnimatedContent
+                    once={false} 
+                    direction="vertical"
+                    reverse={false}
+                    duration={1.2}
+                    ease="power3.out"
+                    initialOpacity={0.0}
+                    animateOpacity
+                    scale={1.02}
+                >
+                    <div className="gap-2 grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6">
+                        {skills.softSkills.map(({ name, logo }, i) => (
+                          <div key={name + i} className={cn( 
+                            "skills-badges group relative flex items-center gap-0.5 rounded-2xl",
+                            "px-2.5 py-2 shadow-sm border border-slate-200",
+                            // interactive feel
+                            "transition-all duration-200",
+                            "hover:shadow-lg hover:-translate-y-0.5",
+                            "active:translate-y-0 active:shadow-sm",
+                            // thin ring on hover
+                            "hover:ring-1 hover:ring-sky-400/40 dark:hover:ring-sky-300/30"
+                              )}
+                              >
+                                <span>{logo}</span>
+                                <span className="font-medium">{name}</span>
+                          </div>
+                        ))}
+                    </div>
+                </AnimatedContent>
               </div>
             </div>
           </div>
