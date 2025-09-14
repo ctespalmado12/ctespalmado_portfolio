@@ -3,7 +3,8 @@ import AnimatedContent from "../components/react-bits/animatedcontent";
 import DecryptedText from "../components/react-bits/decryptedtext";
 import { ArrowUpRight } from "lucide-react";
 import Resume from "../assets/CTE-Resume-2025.pdf";
-import { ScrollTimeline } from "../components/lightswind/scroll-timeline"
+import { ScrollTimeline } from "../components/lightswind/scroll-timeline";
+import profileImg from "../assets/portfolio_dp.jpg";
 
 const About = ({isLight}) => {
 
@@ -20,39 +21,70 @@ const About = ({isLight}) => {
 
   const events = [
     {
-        year: '2019 - 2022',
-        title: 'Diploma in Information Communication Technology',
-        subtitle: 'Polytechnic University of the Philippines',
+        year: '2019',
+        title: 'Building My Programming Foundations',
+        subtitle: '',
         bullets: [
-          ''
+          "Explored programming languages (C++ and Java) through self-study and online tutorials",
+          "Built small projects to practice data structures and algorithms",
+          "Developed a strong foundation in problem-solving and continuous learning"
         ]
     },
     {
-        year: 'May 2022 - Jul 2022',
-        title: 'Intern at ZenGages',
+        year: '2020',
+        title: 'Content Creation & Collaboration',
+        subtitle: '',
+        bullets: [
+          "Started a side hustle reviewing skincare products and collaborating with international brands",
+          "Gained experience in product photography, editing, and writing detailed insights",
+          "Strengthened communication, time management, branding, and digital presentation skills by learning how to understand audiences and present information clearly"
+        ]
+    },
+    {
+        year: '2021',
+        title: 'Stepping Into Web Development',
+        subtitle: '',
+        bullets: [
+          "Began learning HTML, CSS, and JavaScript through online courses",
+          "Built and cloned simple websites to understand structure, styling, and interactivity",
+          "Gained a deeper understanding of how front-end technologies work together to create functional web pages"
+        ]
+    },
+    {
+        year: 'May 2022 – July 2022',
+        title: 'Internship at Zengages',
         subtitle: 'Website Testing and Improvement',
         bullets: [
-          "Laravel/MySQL HRIS features, bug fixes, customizable reports, optimized stored procedures, GitHub collaboration.",
-          "Laravel/MySQL HRIS features, bug fixes, customizable reports, optimized stored procedures, GitHub collaboration.",
-          "Laravel/MySQL HRIS features, bug fixes, customizable reports, optimized stored procedures, GitHub collaboration."
+          "Conducted cross-device and cross-browser testing to identify front-end issues",
+          "Collaborated with developers to reproduce, document, and report UI/UX bugs",
+          "Participated in daily stand-ups and contributed to functionality discussions",
+          "Utilized debugging tools and browser logs to isolate issues"
         ]
     },
     {
-        year: 'Oct 2023 - Present',
-        title: 'Junior Web Developer',
-        subtitle: 'One Document Corporation',
+        year: '2022',
+        title: 'Graduated in Information Technology',
+        subtitle: 'Polytechnic University of the Philippines',
         bullets: [
-          "Cross-device/cross-browser QA, UI/UX bug reproduction & docs, daily stand-ups, DevTools debugging."
+          "President's Lister, 2nd Sem 2019-2020",
+          "Dean’s Lister, 1st Sem 2020-2021",
+          "Dean’s Lister, 1st & 2nd Sem 2021-2022",
         ]
     },
     {
-        year: 'Oct 2023 - Present',
+        year: '2023 - Present',
         title: 'Junior Web Developer',
         subtitle: 'One Document Corporation',
         bullets: [
-          "Cross-device/cross-browser QA, UI/UX bug reproduction & docs, daily stand-ups, DevTools debugging."
+          "Built and maintained web applications using PHP Laravel, jQuery, and MySQL",
+          "Resolved bugs and improved system functionality based on issue logs",
+          "Designed and implemented customizable file viewing and printing features",
+          "Wrote and optimized stored procedures to support backend processes",
+          "Created and deployed scalable RESTful APIs",
+          "Collaborated with a small backend team, following GitHub version control workflows"
         ]
     },
+    
   
     
 ]
@@ -80,7 +112,7 @@ const About = ({isLight}) => {
                 <div className="relative mx-auto max-w-sm sm:max-w-md">
                   {/* Replace src with your actual image import/path */}
                   <img
-                    src="/assets/me.jpg"
+                    src={profileImg}
                     alt="Clarisse Espalmado portrait"
                     loading="lazy"
                     className="w-full aspect-square object-cover rounded-2xl shadow-xl ring-1 ring-black/10 dark:ring-white/10"
