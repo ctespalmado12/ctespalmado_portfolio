@@ -34,8 +34,12 @@ const skills = {
     { name: "VSCode",     logo: <VisualStudioCode size={37}/> },
   ],
   softSkills: [
-    { name: "Communication Skills",      logo: "" },
-    { name: "Problem Solving Skills",        logo: "" },
+    { name: "Communication",      logo: "" },
+    { name: "Problem Solving",        logo: "" },
+    { name: "Teamwork",        logo: "" },
+    { name: "Adaptability",        logo: "" },
+    { name: "Learning Agility",        logo: "" },
+
   ],
 };
 
@@ -162,7 +166,7 @@ const skills = {
                     <div className="gap-2 grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6">
                         {skills.softSkills.map(({ name, logo }, i) => (
                           <div key={name + i} className={cn( 
-                            "skills-badges group relative flex items-center gap-0.5 rounded-2xl",
+                            "skills-badges group relative flex justify-center items-center gap-0.5 rounded-2xl",
                             "px-2.5 py-2 shadow-sm border border-slate-200",
                             // interactive feel
                             "transition-all duration-200",
