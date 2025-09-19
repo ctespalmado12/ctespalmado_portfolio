@@ -110,7 +110,6 @@ const About = ({isLight}) => {
                 scale={1.02}
               >
                 <div className="relative mx-auto max-w-sm sm:max-w-md">
-                  {/* Replace src with your actual image import/path */}
                   <img
                     src={profileImg}
                     alt="Clarisse Espalmado portrait"
@@ -168,7 +167,7 @@ const About = ({isLight}) => {
                   <button
                     type="button"
                     onClick={dlresume}
-                    className="inline-flex items-center text-xs md:text-sm lg:text-xl gap-2 rounded-full font-semibold px-4 py-2 border border-[color-mix(in_oklab,var(--text)_12%,transparent)] bg-[color-mix(in_oklab,var(--panel)_90%,transparent)] text-[var(--text)] hover:[box-shadow:var(--ring)] focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--ring-color,theme(colors.blue.500))]"
+                    className="inline-flex items-center text-xs md:text-xl lg:text-xl gap-2 rounded-full font-semibold px-4 py-2 border border-[color-mix(in_oklab,var(--text)_12%,transparent)] bg-[color-mix(in_oklab,var(--panel)_90%,transparent)] text-[var(--text)] hover:[box-shadow:var(--ring)] focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--ring-color,theme(colors.blue.500))]"
                   >
                     My Resume
                     <ArrowUpRight className="w-4 h-4" aria-hidden="true" />

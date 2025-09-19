@@ -64,7 +64,52 @@ body{
   @apply inline 
 } */
 
-.skills-badges{
+.card-bg{
   background-color: var(--skills-bg);
 }
 
+.card{
+  @apply gap-3 rounded-2xl px-3.5 py-2.5 shadow-sm transition-all duration-200 lg:text-xl
+}
+
+.proj-badge{
+  color: var(--text);
+}
+.proj-img {
+  opacity: 0;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.view-proj{
+  transition: .5s ease;
+  opacity: 0;
+  pointer-events: none;    /* not clickable when hidden */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+ .proj:hover .splide__slide.is-active .proj-img {
+    filter: blur(4px) brightness(.9);
+    transform: scale(1.02);
+  }
+.proj:hover .view-proj{
+  opacity: 1;
+}
+
+.proj-link {
+  @apply inline-flex items-center gap-1 rounded-xl md:rounded-2xl lg:rounded-2xl px-2.5 py-0.5 md:px-3.5 md:py-2 lg:px-3.5 lg:py-2 text-xl lg:text-2xl font-semibold;
+    /* colors from your palette */
+    color: #e2e8f0;
+    background: color-mix(in oklab, #E34F26 90%, transparent);
+    border: 1px solid color-mix(in oklab, #e2e8f0 12%, transparent);
+}
+
+.proj-link:hover { filter: brightness(1.05) saturate(1.05); }

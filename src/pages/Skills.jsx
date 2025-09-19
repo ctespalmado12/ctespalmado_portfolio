@@ -47,6 +47,21 @@ const skills = {
     <>
         <section id='skills' className="min-h-screen">
           <div className="w-full mx-auto px-5 sm:px-8 lg:px-16 xl:px-24 py-16 sm:py-24">
+            <AnimatedContent
+                    once={false}  
+                    distance={15}
+                    direction="vertical"
+                    reverse={false}
+                    duration={1.2}
+                    ease="power3.out"
+                    initialOpacity={0}
+                    animateOpacity
+                    scale={1.02}
+                  >
+                    <div className="text-center py-16 px-4">
+                       <h3 className="text-3xl md:text-5xl xl:text-6xl font-bold mb-4">My Tech Stack</h3>
+                    </div>
+                  </AnimatedContent>
             <div className="grid justify-center items-center gap-8 space-y-1.5">
               <div className="">
                 <AnimatedContent
@@ -60,7 +75,10 @@ const skills = {
                   animateOpacity
                   scale={1.02}
                 >
-                  <h3 className="flex mb-2 font-semibold gap-1.5"><FileCode2 strokeWidth={1.5} />Frontend</h3>
+                  <h3 className="flex items-center gap-1.5 mb-2 font-semibold">
+                    <Sticker className="w-5 h-5 shrink-0" strokeWidth={1.5} />
+                    <span className="leading-tight text-xl lg:text-2xl">Frontend</span>
+                  </h3>
                 </AnimatedContent>
                 <AnimatedContent
                     once={false} 
@@ -75,10 +93,9 @@ const skills = {
                     <div className="gap-2 grid grid-cols-5 md:grid-cols-4 xl:grid-cols-6">
                         {skills.front.map(({ name, logo }, i) => (
                           <div key={name + i} className={cn( 
-                            "skills-badges group relative flex items-center gap-3 rounded-2xl",
-                            "px-3.5 py-2.5 shadow-sm border border-slate-200",
+                            "skills-badges group relative flex items-center border border-slate-200",
+                            "card",
                             // interactive feel
-                            "transition-all duration-200",
                             "hover:shadow-lg hover:-translate-y-0.5",
                             "active:translate-y-0 active:shadow-sm",
                             // thin ring on hover
@@ -105,7 +122,10 @@ const skills = {
                   animateOpacity
                   scale={1.02}
                 >
-                  <h3 className="flex mb-2 font-semibold gap-1.5"><Cpu strokeWidth={1.5} />Backend & System</h3>
+                  <h3 className="flex items-center gap-1.5 mb-2 font-semibold">
+                    <Sticker className="w-5 h-5 shrink-0" strokeWidth={1.5} />
+                    <span className="leading-tight text-xl lg:text-2xl">Backend & System</span>
+                  </h3>
                 </AnimatedContent>
                 
                 <AnimatedContent
@@ -121,10 +141,9 @@ const skills = {
                     <div className="gap-2 grid grid-cols-5 md:grid-cols-4 xl:grid-cols-6">
                         {skills.back.map(({ name, logo }, i) => (
                           <div key={name + i} className={cn( 
-                            "skills-badges group relative flex items-center gap-3 rounded-2xl",
-                            "px-3.5 py-2.5 shadow-sm border border-slate-200",
+                            "skills-badges group relative flex items-center border border-slate-200",
+                            "card",
                             // interactive feel
-                            "transition-all duration-200",
                             "hover:shadow-lg hover:-translate-y-0.5",
                             "active:translate-y-0 active:shadow-sm",
                             // thin ring on hover
@@ -151,7 +170,10 @@ const skills = {
                   animateOpacity
                   scale={1.02}
                 >
-                  <h3 className="flex mb-2 font-semibold gap-1.5"><Sticker strokeWidth={1.5} />Soft Skills</h3>
+                  <h3 className="flex items-center gap-1.5 mb-2 font-semibold">
+                    <Sticker className="w-5 h-5 shrink-0" strokeWidth={1.5} />
+                    <span className="leading-tight text-xl lg:text-2xl">Soft Skills</span>
+                  </h3>
                 </AnimatedContent>
                 <AnimatedContent
                     once={false} 
@@ -166,10 +188,9 @@ const skills = {
                     <div className="gap-2 grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6">
                         {skills.softSkills.map(({ name, logo }, i) => (
                           <div key={name + i} className={cn( 
-                            "skills-badges group relative flex justify-center items-center gap-0.5 rounded-2xl",
-                            "px-2.5 py-2 shadow-sm border border-slate-200",
+                            "skills-badges group relative flex items-center border border-slate-200",
+                            "card",
                             // interactive feel
-                            "transition-all duration-200",
                             "hover:shadow-lg hover:-translate-y-0.5",
                             "active:translate-y-0 active:shadow-sm",
                             // thin ring on hover

@@ -38,7 +38,7 @@ function App() {
           <div>
             <Home/>
             <About isLight={isLight}/>
-            {/* <Projects/> */}
+            <Projects/>
             <Skills/>
             {/* <Contact/> */}
           </div>
