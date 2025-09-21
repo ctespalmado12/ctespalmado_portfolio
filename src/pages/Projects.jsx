@@ -10,35 +10,40 @@ const thumbsRefs = useRef([]);
 
   const projects = [
     {
-      title: "Project 1",
+      title: "Jeepney Fare Collection System",
       desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id. Pretium tellus duis convallis tempus leo eu aenean. Urna tempor pulvinar vivamus fringilla lacus nec metus. Iaculis massa nisl malesuada lacinia integer nunc posuere. Semper vel class aptent taciti sociosqu ad litora. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Dis parturient montes nascetur ridiculus mus donec rhoncus. Nulla molestie mattis scelerisque maximus eget fermentum odio. Purus est efficitur laoreet mauris pharetra vestibulum fusce.",
-      link: "https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity",
+      link: "https://github.com/ctespalmado12/jeepney-fare-collection-system",
       imgs: [
-        "/projects-ss/placeholder1.png",
-        "/projects-ss/placeholder2.png",
-        "/projects-ss/placeholder3.png",
-        "/projects-ss/placeholder4.png",
-        "/projects-ss/placeholder5.png",
-        "/projects-ss/placeholder6.png",
+        "/projects-ss/jeep_fare/jeep_fare_1.png",
+        "/projects-ss/jeep_fare/jeep_fare_2.png",
+        "/projects-ss/jeep_fare/jeep_fare_3.png",
+        "/projects-ss/jeep_fare/jeep_fare_4.png",
+        "/projects-ss/jeep_fare/jeep_fare_5.png",
+        "/projects-ss/jeep_fare/jeep_fare_6.png",
+        "/projects-ss/jeep_fare/jeep_fare_7.png",
+        "/projects-ss/jeep_fare/jeep_fare_8.png",
       ],
       used: [
-        "PHP",
-        "Laravel",
-        "HTML5",
-        "JQuery"
+        "C++"
       ]
     },
     {
-      title: "Project 2",
+      title: "Water Inventory System",
       desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id. Pretium tellus duis convallis tempus leo eu aenean. Urna tempor pulvinar vivamus fringilla lacus nec metus. Iaculis massa nisl malesuada lacinia integer nunc posuere. Semper vel class aptent taciti sociosqu ad litora. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Dis parturient montes nascetur ridiculus mus donec rhoncus. Nulla molestie mattis scelerisque maximus eget fermentum odio. Purus est efficitur laoreet mauris pharetra vestibulum fusce.",
       link: "",
       imgs: [
-        "/projects-ss/placeholder1.png",
-        "/projects-ss/placeholder2.png",
-        "/projects-ss/placeholder3.png",
-        "/projects-ss/placeholder4.png",
-        "/projects-ss/placeholder5.png",
-        "/projects-ss/placeholder6.png",
+        "/projects-ss/water_inventory/water_inventory1.png",
+        "/projects-ss/water_inventory/water_inventory2.png",
+        "/projects-ss/water_inventory/water_inventory3.png",
+        "/projects-ss/water_inventory/water_inventory4.png",
+        "/projects-ss/water_inventory/water_inventory5.png",
+        "/projects-ss/water_inventory/water_inventory6.png",
+        "/projects-ss/water_inventory/water_inventory7.png",
+        "/projects-ss/water_inventory/water_inventory8.png",
+        "/projects-ss/water_inventory/water_inventory10.png",
+        "/projects-ss/water_inventory/water_inventory11.png",
+        "/projects-ss/water_inventory/water_inventory12.png",
+        "/projects-ss/water_inventory/water_inventory13.png",
       ],
       used: [
         "PHP",
