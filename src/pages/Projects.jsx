@@ -40,16 +40,14 @@ const thumbsRefs = useRef([]);
         "/projects-ss/water_inventory/water_inventory6.png",
         "/projects-ss/water_inventory/water_inventory7.png",
         "/projects-ss/water_inventory/water_inventory8.png",
+        "/projects-ss/water_inventory/water_inventory9.png",
         "/projects-ss/water_inventory/water_inventory10.png",
         "/projects-ss/water_inventory/water_inventory11.png",
         "/projects-ss/water_inventory/water_inventory12.png",
         "/projects-ss/water_inventory/water_inventory13.png",
       ],
       used: [
-        "PHP",
-        "Laravel",
-        "HTML5",
-        "JQuery"
+        "Java"
       ]
     },
     {
@@ -88,6 +86,8 @@ const BRAND = {
   Postman:    "bg-[#FF6C37]",
   Git:        "bg-[#F05032]",
   VSCode:     "bg-[#007ACC]",
+  "C++": "bg-[#00599C]",
+  Java: "bg-[#F89820]",
 };
 
   return (

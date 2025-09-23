@@ -113,3 +113,27 @@ body{
 }
 
 .proj-link:hover { filter: brightness(1.05) saturate(1.05); }
+
+.contact{
+background:linear-gradient(180deg, color-mix(in oklab, var(--panel) 90%, transparent), color-mix(in oklab, var(--panel) 95%, transparent));
+border:1px solid color-mix(in oklab, var(--text) 12%, transparent);
+border-radius:22px;
+padding:1.1rem;
+}
+
+input, textarea{
+  @apply w-full pt-4 pb-4 pr-5 pl-5 rounded-xl outline-0;
+  border:1px solid color-mix(in oklab, var(--text) 14%, transparent);
+  background:color-mix(in oklab, var(--panel) 92%, transparent); 
+  color:var(--text);
+}
+
+input:focus, textarea:focus{
+  box-shadow:var(--ring)
+}
+
+.btn{
+  border:1px solid color-mix(in oklab, var(--text) 12%, transparent);
+  background:color-mix(in oklab, var(--panel) 90%, transparent);
+  color:var(--text);
+}

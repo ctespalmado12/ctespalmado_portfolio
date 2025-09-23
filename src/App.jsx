@@ -40,7 +40,7 @@ function App() {
             <About isLight={isLight}/>
             <Projects/>
             <Skills/>
-            {/* <Contact/> */}
+            <Contact/>
           </div>
           
       </div>
