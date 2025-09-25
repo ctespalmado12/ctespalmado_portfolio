@@ -12,7 +12,7 @@ const thumbsRefs = useRef([]);
     {
       title: "Personal Portfolio",
       desc: "",
-      link: "",
+      link: "https://ctespalmado-portfolio.netlify.app/",
       imgs: [
         "/src/asset/projects-ss/portfolio/portfolio1.png",
         "/src/assets/projects-ss/portfolio/portfolio2.png",
