@@ -111,7 +111,7 @@ const BRAND = {
   HTML5:      "bg-[#E34F26] text-white",
   CSS:        "bg-[#1572B6] text-white",
   Bootstrap5: "bg-[#7952B3] text-white",
-  Tailwind:"bg-[#38BDF8] text-black",  
+  Tailwind:   "bg-[#38BDF8] text-black",  
   React:      "bg-[#61DAFB] text-black",  
   JavaScript: "bg-[#F7DF1E] text-black",  
   JQuery:     "bg-[#0769AD] text-white",
@@ -126,6 +126,7 @@ const BRAND = {
   Java:       "bg-[#F89820] text-black", 
 };
 
+const isEmpty = !myVariable || myVariable.length === 0;
 
   return (
     <section id="projects" className="min-h-screen">
@@ -171,8 +172,8 @@ const BRAND = {
                     {p.imgs.map((src, i) => (
                       <SplideSlide className="relative" key={`p${pIdx}-main-${i}`}>
                         <img className="proj-img" src={src} alt={`${p.title || `Project ${pIdx + 1}`} – ${i + 1}`} loading="lazy" />
-                        <div className="view-proj  group-active:opacity-100 group-active:pointer-events-auto ">
-                          <a href={p.link} target="_blank" className="proj-link">View<ArrowUpRight className="lg:mb-1 lg:mt-2" aria-hidden="true" /></a>
+                        <div className={cn("view-proj group-active:opacity-100 group-active:pointer-events-auto",)}>
+                          <a  disabled={isEmpty}  aria-disabled href={p.link} target="_blank" className="proj-link">View<ArrowUpRight className="lg:mb-1 lg:mt-2" aria-hidden="true" /></a>
                         </div>
                       </SplideSlide>
                     ))}

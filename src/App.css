@@ -156,6 +156,7 @@ body{
   }
 .proj:hover .view-proj{
   opacity: 1;
+  pointer-events: auto; 
 }
 
 .proj-link {
