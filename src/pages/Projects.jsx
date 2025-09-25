@@ -108,23 +108,24 @@ const thumbsRefs = useRef([]);
   ]
 
 const BRAND = {
-  HTML5:      "bg-[#E34F26]",
-  CSS:        "bg-[#1572B6]",
-  Bootstrap5: "bg-[#7952B3]",
-  TailwindCSS:"bg-[#38BDF8]",
-  React:      "bg-[#61DAFB]",
-  JavaScript: "bg-[#F7DF1E]",
-  JQuery:     "bg-[#0769AD]",
-  PHP:        "bg-[#777BB4]",
-  Laravel:    "bg-[#FF2D20]",
-  MySQL:      "bg-[#4479A1]",
-  GitHub:     "bg-[#181717]",
-  Postman:    "bg-[#FF6C37]",
-  Git:        "bg-[#F05032]",
-  VSCode:     "bg-[#007ACC]",
-  "C++": "bg-[#00599C]",
-  Java: "bg-[#F89820]",
+  HTML5:      "bg-[#E34F26] text-white",
+  CSS:        "bg-[#1572B6] text-white",
+  Bootstrap5: "bg-[#7952B3] text-white",
+  Tailwind:"bg-[#38BDF8] text-black",  
+  React:      "bg-[#61DAFB] text-black",  
+  JavaScript: "bg-[#F7DF1E] text-black",  
+  JQuery:     "bg-[#0769AD] text-white",
+  PHP:        "bg-[#777BB4] text-white",
+  Laravel:    "bg-[#FF2D20] text-white",
+  MySQL:      "bg-[#4479A1] text-white",
+  GitHub:     "bg-[#181717] text-white",
+  Postman:    "bg-[#FF6C37] text-white",
+  Git:        "bg-[#F05032] text-white",
+  VSCode:     "bg-[#007ACC] text-white",
+  "C++":      "bg-[#00599C] text-white",
+  Java:       "bg-[#F89820] text-black", 
 };
+
 
   return (
     <section id="projects" className="min-h-screen">
@@ -211,7 +212,7 @@ const BRAND = {
                       key={u + i}
                       className={cn("inline-flex items-center px-2.5 py-1 rounded-full font-bold border",
                         "text-[10px] md:text-xs lg:text-[15px]",
-                        "!text-[#e2e8f0]",
+                        // "!text-[#e2e8f0]",
                         BRAND[u] ?? BRAND.default
                       )}
                       title={u}
