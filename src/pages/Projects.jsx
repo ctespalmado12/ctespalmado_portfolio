@@ -10,8 +10,43 @@ const thumbsRefs = useRef([]);
 
   const projects = [
     {
+      title: "Personal Portfolio",
+      desc: "",
+      link: "",
+      imgs: [
+        "/projects-ss/portfolio/portfolio1.png",
+        "/projects-ss/portfolio/portfolio2.png",
+      ],
+      used: [
+        "React",
+        "Tailwind",
+        "JavaScript"
+      ]
+    },
+    {
+      title: "Human Resource Information System",
+      desc: "",
+      link: "",
+      imgs: [
+        "/projects-ss/hris/hris1.png",
+        "/projects-ss/hris/hris2.png",
+        "/projects-ss/hris/hris3.png",
+        "/projects-ss/hris/hris4.png",
+        "/projects-ss/hris/hris5.png",
+        "/projects-ss/hris/hris6.png",
+        "/projects-ss/hris/hris7.png",
+      ],
+      used: [
+        "PHP",
+        "Laravel",
+        "HTML5",
+        "JQuery",
+        "MySQL",
+      ]
+    },
+    {
       title: "Jeepney Fare Collection System",
-      desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id. Pretium tellus duis convallis tempus leo eu aenean. Urna tempor pulvinar vivamus fringilla lacus nec metus. Iaculis massa nisl malesuada lacinia integer nunc posuere. Semper vel class aptent taciti sociosqu ad litora. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Dis parturient montes nascetur ridiculus mus donec rhoncus. Nulla molestie mattis scelerisque maximus eget fermentum odio. Purus est efficitur laoreet mauris pharetra vestibulum fusce.",
+      desc: "",
       link: "https://github.com/ctespalmado12/jeepney-fare-collection-system",
       imgs: [
         "/projects-ss/jeep_fare/jeep_fare_1.png",
@@ -29,7 +64,7 @@ const thumbsRefs = useRef([]);
     },
     {
       title: "Water Inventory System",
-      desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id. Pretium tellus duis convallis tempus leo eu aenean. Urna tempor pulvinar vivamus fringilla lacus nec metus. Iaculis massa nisl malesuada lacinia integer nunc posuere. Semper vel class aptent taciti sociosqu ad litora. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Dis parturient montes nascetur ridiculus mus donec rhoncus. Nulla molestie mattis scelerisque maximus eget fermentum odio. Purus est efficitur laoreet mauris pharetra vestibulum fusce.",
+      desc: "",
       link: "",
       imgs: [
         "/projects-ss/water_inventory/water_inventory1.png",
@@ -47,7 +82,8 @@ const thumbsRefs = useRef([]);
         "/projects-ss/water_inventory/water_inventory13.png",
       ],
       used: [
-        "Java"
+        "Java",
+        "MySQL"
       ]
     },
     {
@@ -105,7 +141,7 @@ const BRAND = {
         animateOpacity
         scale={1.02}
       >
-        <div className="text-center py-16 px-4">
+        <div className="text-center px-4">
            <h3 className="text-3xl md:text-5xl xl:text-6xl font-bold mb-4">My Projects</h3>
         </div>
       </AnimatedContent>
@@ -116,11 +152,9 @@ const BRAND = {
             <div key={`proj-${pIdx}`} className={cn(
               "self-start",
               "card",
-              "card-bg m-3 border border-slate-200",
+              "m-3 border border-slate-200",
               // interactive feel
-              "active:translate-y-0 active:shadow-sm",
-              // thin ring on hover
-              "hover:ring-2 hover:ring-sky-400/40 dark:hover:ring-sky-300/30",
+              "active:translate-y-0 active:shadow-sm"
               )}>
                 <div className="proj relative">
                   <Splide

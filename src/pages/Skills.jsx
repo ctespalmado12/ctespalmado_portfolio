@@ -62,7 +62,7 @@ const skills = {
                     animateOpacity
                     scale={1.02}
                   >
-                    <div className="text-center py-16 px-4">
+                    <div className="text-center px-4">
                        <h3 className="text-3xl md:text-5xl xl:text-6xl font-bold mb-4">My Tech Stack</h3>
                     </div>
                   </AnimatedContent>
@@ -80,7 +80,7 @@ const skills = {
                   scale={1.02}
                 >
                   <h3 className="flex items-center gap-1.5 mb-2 font-semibold">
-                    <Sticker className="w-5 h-5 shrink-0" strokeWidth={1.5} />
+                    <FileCode2 className="w-5 h-5 shrink-0" strokeWidth={1.5} />
                     <span className="leading-tight text-xl lg:text-2xl">Frontend</span>
                   </h3>
                 </AnimatedContent>
@@ -101,9 +101,7 @@ const skills = {
                             "card",
                             // interactive feel
                             "hover:shadow-lg hover:-translate-y-0.5",
-                            "active:translate-y-0 active:shadow-sm",
-                            // thin ring on hover
-                            "hover:ring-1 hover:ring-sky-400/40 dark:hover:ring-sky-300/30"
+                            "active:translate-y-0 active:shadow-sm"
                               )}
                               title={name}>
                                 <span>{logo}</span>
@@ -127,7 +125,7 @@ const skills = {
                   scale={1.02}
                 >
                   <h3 className="flex items-center gap-1.5 mb-2 font-semibold">
-                    <Sticker className="w-5 h-5 shrink-0" strokeWidth={1.5} />
+                    <Cpu className="w-5 h-5 shrink-0" strokeWidth={1.5} />
                     <span className="leading-tight text-xl lg:text-2xl">Backend & System</span>
                   </h3>
                 </AnimatedContent>
@@ -149,9 +147,7 @@ const skills = {
                             "card",
                             // interactive feel
                             "hover:shadow-lg hover:-translate-y-0.5",
-                            "active:translate-y-0 active:shadow-sm",
-                            // thin ring on hover
-                            "hover:ring-1 hover:ring-sky-400/40 dark:hover:ring-sky-300/30"
+                            "active:translate-y-0 active:shadow-sm"
                               )}
                               title={name}>
                                 <span>{logo}</span>
@@ -175,7 +171,7 @@ const skills = {
                   scale={1.02}
                 >
                   <h3 className="flex items-center gap-1.5 mb-2 font-semibold">
-                    <Sticker className="w-5 h-5 shrink-0" strokeWidth={1.5} />
+                    <FileCode2 className="w-5 h-5 shrink-0" strokeWidth={1.5} />
                     <span className="leading-tight text-xl lg:text-2xl">foundations</span>
                   </h3>
                 </AnimatedContent>
@@ -197,9 +193,7 @@ const skills = {
                             "card",
                             // interactive feel
                             "hover:shadow-lg hover:-translate-y-0.5",
-                            "active:translate-y-0 active:shadow-sm",
-                            // thin ring on hover
-                            "hover:ring-1 hover:ring-sky-400/40 dark:hover:ring-sky-300/30"
+                            "active:translate-y-0 active:shadow-sm"
                               )}
                               title={name}>
                                 <span>{logo}</span>
@@ -244,9 +238,7 @@ const skills = {
                             "card",
                             // interactive feel
                             "hover:shadow-lg hover:-translate-y-0.5",
-                            "active:translate-y-0 active:shadow-sm",
-                            // thin ring on hover
-                            "hover:ring-1 hover:ring-sky-400/40 dark:hover:ring-sky-300/30"
+                            "active:translate-y-0 active:shadow-sm"
                               )}
                               >
                                 <span>{logo}</span>

@@ -61,7 +61,7 @@ const Navbar = ({isLight, setIsLight}) => {
               <button id="themeToggle" onClick={() => setIsLight(v => !v)}
                       className="inline-flex items-center gap-[.45rem] px-[.9rem] py-[.6rem] rounded-full font-semibold
                             border [border-color:color-mix(in_oklab,_var(--text)_12%,_transparent)]
-                            bg-[color-mix(in_oklab,_var(--panel)_90%,_transparent)]
+                            bg-[color-mix(in_oklab,_var(--panel)_40%,_transparent)]
                             text-[var(--text)] hover:[box-shadow:var(--ring)]"
                       aria-pressed={isLight}
                       aria-label={isLight ? 'Switch to dark mode' : 'Switch to light mode'}
@@ -73,7 +73,7 @@ const Navbar = ({isLight, setIsLight}) => {
 
               <a className="inline-flex items-center gap-[.45rem] px-[.9rem] py-[.6rem] rounded-full font-semibold
                         border [border-color:color-mix(in_oklab,_var(--text)_12%,_transparent)]
-                        bg-[color-mix(in_oklab,_var(--panel)_90%,_transparent)]
+                        bg-[color-mix(in_oklab,_var(--panel)_40%,_transparent)]
                         text-[var(--text)] hover:[box-shadow:var(--ring)]"
                 href="#contact">Say hello</a>
             </div>

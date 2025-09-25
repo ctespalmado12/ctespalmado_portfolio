@@ -1,7 +1,7 @@
 @reference "tailwindcss";
 /* @reference 'lightswind/plugin'; */
 
-:root{
+:root1{
   --bg: #0b1220;
   --panel: #0f172a;
   --text: #e2e8f0;
@@ -11,7 +11,7 @@
   --ring: 0 0 0 3px rgba(34,211,238,.35);
   --skills-bg: #0000006a;
 }
-:root.light{
+:root1.light{
   --bg: #f8fafc;
   --panel: #ffffff;
   --text: #0f172a;
@@ -19,6 +19,56 @@
   --brand: #0ea5e9; /* sky-500 */
   --brand-ink: #0284c7; /* sky-600 */
   --skills-bg: #FBFCFD;
+}
+
+:root{
+  --bg:#0e1218;        /* blue-gray charcoal */
+  --panel:#151b26;
+  --text:#eef2f7;      /* light slate */
+  --muted:#93a0b3;
+  --brand: #22d3ee; /* cyan-400 */
+  --brand-ink: #0ea5e9; /* sky-500 */
+  --ring: 0 0 0 3px rgba(34,211,238,.35);
+  --skills-bg: #0000006a;
+}
+:root.light{
+  --bg:#fff8f8;
+  --panel:#ffffff;
+  --text:#1f2937;      /* gray-800 */
+  --muted:#6b7280; 
+  --brand: #0ea5e9; /* sky-500 */
+  --brand-ink: #0284c7; /* sky-600 */
+  --skills-bg:#fff1f2;
+}
+
+
+
+/* Autofill fix */
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px var(--panel) inset !important;
+  /* box-shadow: 0 0 0 1000px var(--panel) inset !important; */
+
+  -webkit-text-fill-color: var(--text) !important;
+  caret-color: var(--text) !important;
+  border: 1px solid color-mix(in oklab, var(--text) 14%, transparent) !important;
+  outline: none !important;
+  
+}
+
+/* Autofill + focus */
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px var(--panel) inset, var(--ring) !important;
+  box-shadow: 0 0 0 1000px var(--panel) inset, var(--ring) !important;
+
+  -webkit-text-fill-color: var(--text) !important;
+  caret-color: var(--text) !important;
+  outline: none !important;
+  border: 0 !important;
+
 }
 
 html,body{
@@ -64,12 +114,16 @@ body{
   @apply inline 
 } */
 
-.card-bg{
-  background-color: var(--skills-bg);
+.card{
+  @apply gap-3 rounded-2xl px-3.5 py-2.5 shadow-sm transition-all duration-200 lg:text-xl;
+  background-color: color-mix(in_oklab, var(--panel) 40%, transparent);
+
 }
 
-.card{
-  @apply gap-3 rounded-2xl px-3.5 py-2.5 shadow-sm transition-all duration-200 lg:text-xl
+.card:hover{
+  @apply ring-2;
+  box-shadow: var(--ring);
+  background-color: var(--skills-bg);
 }
 
 .proj-badge{
@@ -115,7 +169,7 @@ body{
 .proj-link:hover { filter: brightness(1.05) saturate(1.05); }
 
 .contact{
-background:linear-gradient(180deg, color-mix(in oklab, var(--panel) 90%, transparent), color-mix(in oklab, var(--panel) 95%, transparent));
+background:linear-gradient(180deg, color-mix(in oklab, var(--skills-bg) 5%, transparent), color-mix(in oklab, var(--panel) 95%, transparent));
 border:1px solid color-mix(in oklab, var(--text) 12%, transparent);
 border-radius:22px;
 padding:1.1rem;
@@ -124,7 +178,7 @@ padding:1.1rem;
 input, textarea{
   @apply w-full pt-4 pb-4 pr-5 pl-5 rounded-xl outline-0;
   border:1px solid color-mix(in oklab, var(--text) 14%, transparent);
-  background:color-mix(in oklab, var(--panel) 92%, transparent); 
+  background:color-mix(in oklab, var(--skills-bg) 52%, transparent); 
   color:var(--text);
 }
 
@@ -134,6 +188,6 @@ input:focus, textarea:focus{
 
 .btn{
   border:1px solid color-mix(in oklab, var(--text) 12%, transparent);
-  background:color-mix(in oklab, var(--panel) 90%, transparent);
+  background:color-mix(in oklab, var(--skills-bg) 20%, transparent);
   color:var(--text);
 }
