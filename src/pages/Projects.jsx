@@ -14,8 +14,8 @@ const thumbsRefs = useRef([]);
       desc: "",
       link: "",
       imgs: [
-        "/projects-ss/portfolio/portfolio1.png",
-        "/projects-ss/portfolio/portfolio2.png",
+        "/src/asset/projects-ss/portfolio/portfolio1.png",
+        "/src/assets/projects-ss/portfolio/portfolio2.png",
       ],
       used: [
         "React",
@@ -28,13 +28,13 @@ const thumbsRefs = useRef([]);
       desc: "",
       link: "",
       imgs: [
-        "/projects-ss/hris/hris1.png",
-        "/projects-ss/hris/hris2.png",
-        "/projects-ss/hris/hris3.png",
-        "/projects-ss/hris/hris4.png",
-        "/projects-ss/hris/hris5.png",
-        "/projects-ss/hris/hris6.png",
-        "/projects-ss/hris/hris7.png",
+        "/src/assets/projects-ss/hris/hris1.png",
+        "/src/assets/projects-ss/hris/hris2.png",
+        "/src/assets/projects-ss/hris/hris3.png",
+        "/src/assets/projects-ss/hris/hris4.png",
+        "/src/assets/projects-ss/hris/hris5.png",
+        "/src/assets/projects-ss/hris/hris6.png",
+        "/src/assets/projects-ss/hris/hris7.png",
       ],
       used: [
         "PHP",
@@ -49,14 +49,14 @@ const thumbsRefs = useRef([]);
       desc: "",
       link: "https://github.com/ctespalmado12/jeepney-fare-collection-system",
       imgs: [
-        "/projects-ss/jeep_fare/jeep_fare_1.png",
-        "/projects-ss/jeep_fare/jeep_fare_2.png",
-        "/projects-ss/jeep_fare/jeep_fare_3.png",
-        "/projects-ss/jeep_fare/jeep_fare_4.png",
-        "/projects-ss/jeep_fare/jeep_fare_5.png",
-        "/projects-ss/jeep_fare/jeep_fare_6.png",
-        "/projects-ss/jeep_fare/jeep_fare_7.png",
-        "/projects-ss/jeep_fare/jeep_fare_8.png",
+        "/src/assets/projects-ss/jeep_fare/jeep_fare_1.png",
+        "/src/assets/projects-ss/jeep_fare/jeep_fare_2.png",
+        "/src/assets/projects-ss/jeep_fare/jeep_fare_3.png",
+        "/src/assets/projects-ss/jeep_fare/jeep_fare_4.png",
+        "/src/assets/projects-ss/jeep_fare/jeep_fare_5.png",
+        "/src/assets/projects-ss/jeep_fare/jeep_fare_6.png",
+        "/src/assets/projects-ss/jeep_fare/jeep_fare_7.png",
+        "/src/assets/projects-ss/jeep_fare/jeep_fare_8.png",
       ],
       used: [
         "C++"
@@ -67,44 +67,44 @@ const thumbsRefs = useRef([]);
       desc: "",
       link: "",
       imgs: [
-        "/projects-ss/water_inventory/water_inventory1.png",
-        "/projects-ss/water_inventory/water_inventory2.png",
-        "/projects-ss/water_inventory/water_inventory3.png",
-        "/projects-ss/water_inventory/water_inventory4.png",
-        "/projects-ss/water_inventory/water_inventory5.png",
-        "/projects-ss/water_inventory/water_inventory6.png",
-        "/projects-ss/water_inventory/water_inventory7.png",
-        "/projects-ss/water_inventory/water_inventory8.png",
-        "/projects-ss/water_inventory/water_inventory9.png",
-        "/projects-ss/water_inventory/water_inventory10.png",
-        "/projects-ss/water_inventory/water_inventory11.png",
-        "/projects-ss/water_inventory/water_inventory12.png",
-        "/projects-ss/water_inventory/water_inventory13.png",
+        "/src/assets/projects-ss/water_inventory/water_inventory1.png",
+        "/src/assets/projects-ss/water_inventory/water_inventory2.png",
+        "/src/assets/projects-ss/water_inventory/water_inventory3.png",
+        "/src/assets/projects-ss/water_inventory/water_inventory4.png",
+        "/src/assets/projects-ss/water_inventory/water_inventory5.png",
+        "/src/assets/projects-ss/water_inventory/water_inventory6.png",
+        "/src/assets/projects-ss/water_inventory/water_inventory7.png",
+        "/src/assets/projects-ss/water_inventory/water_inventory8.png",
+        "/src/assets/projects-ss/water_inventory/water_inventory9.png",
+        "/src/assets/projects-ss/water_inventory/water_inventory10.png",
+        "/src/assets/projects-ss/water_inventory/water_inventory11.png",
+        "/src/assets/projects-ss/water_inventory/water_inventory12.png",
+        "/src/assets/projects-ss/water_inventory/water_inventory13.png",
       ],
       used: [
         "Java",
         "MySQL"
       ]
     },
-    {
-      title: "Project 3",
-      desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id. Pretium tellus duis convallis tempus leo eu aenean. Urna tempor pulvinar vivamus fringilla lacus nec metus. Iaculis massa nisl malesuada lacinia integer nunc posuere. Semper vel class aptent taciti sociosqu ad litora. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Dis parturient montes nascetur ridiculus mus donec rhoncus. Nulla molestie mattis scelerisque maximus eget fermentum odio. Purus est efficitur laoreet mauris pharetra vestibulum fusce.",
-      link: "",
-      imgs: [
-        "/projects-ss/placeholder1.png",
-        "/projects-ss/placeholder2.png",
-        "/projects-ss/placeholder3.png",
-        "/projects-ss/placeholder4.png",
-        "/projects-ss/placeholder5.png",
-        "/projects-ss/placeholder6.png",
-      ],
-      used: [
-        "PHP",
-        "Laravel",
-        "HTML5",
-        "JQuery"
-      ]
-    },
+    // {
+    //   title: "Project 3",
+    //   desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id. Pretium tellus duis convallis tempus leo eu aenean. Urna tempor pulvinar vivamus fringilla lacus nec metus. Iaculis massa nisl malesuada lacinia integer nunc posuere. Semper vel class aptent taciti sociosqu ad litora. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Dis parturient montes nascetur ridiculus mus donec rhoncus. Nulla molestie mattis scelerisque maximus eget fermentum odio. Purus est efficitur laoreet mauris pharetra vestibulum fusce.",
+    //   link: "",
+    //   imgs: [
+    //     "/src/assets/projects-ss/placeholder1.png",
+    //     "/src/assets/projects-ss/placeholder2.png",
+    //     "/src/assets/projects-ss/placeholder3.png",
+    //     "/src/assets/projects-ss/placeholder4.png",
+    //     "/src/assets/projects-ss/placeholder5.png",
+    //     "/src/assets/projects-ss/placeholder6.png",
+    //   ],
+    //   used: [
+    //     "PHP",
+    //     "Laravel",
+    //     "HTML5",
+    //     "JQuery"
+    //   ]
+    // },
   ]
 
 const BRAND = {
