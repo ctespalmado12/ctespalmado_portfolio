@@ -14,6 +14,7 @@ const thumbsRefs = useRef([]);
       desc: "",
       link: "https://ctespalmado-portfolio.netlify.app/",
       imgs: [
+        "/src/assets/projects-ss/portfolio/portfolio1.png",
         "/src/asset/projects-ss/portfolio/portfolio1.png",
         "/src/assets/projects-ss/portfolio/portfolio2.png",
       ],
@@ -141,7 +142,7 @@ const BRAND = {
         animateOpacity
         scale={1.02}
       >
-        <div className="text-center px-4">
+        <div className="text-center py-4 px-4">
            <h3 className="text-3xl md:text-5xl xl:text-6xl font-bold mb-4">My Projects</h3>
         </div>
       </AnimatedContent>
