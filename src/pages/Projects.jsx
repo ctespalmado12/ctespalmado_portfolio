@@ -15,7 +15,6 @@ const thumbsRefs = useRef([]);
       link: "https://ctespalmado-portfolio.netlify.app/",
       imgs: [
         "/src/assets/projects-ss/portfolio/portfolio1.png",
-        "/src/asset/projects-ss/portfolio/portfolio1.png",
         "/src/assets/projects-ss/portfolio/portfolio2.png",
       ],
       used: [
