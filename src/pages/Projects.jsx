@@ -45,6 +45,29 @@ const thumbsRefs = useRef([]);
       ]
     },
     {
+      title: "Barangay Appointment System",
+      desc: "",
+      link: "",
+      imgs: [
+        "/brgy_ss/brgy_ss1.png",
+        "/brgy_ss/brgy_ss2.png",
+        "/brgy_ss/brgy_ss3.png",
+        "/brgy_ss/brgy_ss4.png",
+        "/brgy_ss/brgy_ss5.png",
+        "/brgy_ss/brgy_ss6.png",
+        "/brgy_ss/brgy_ss7.png",
+        "/brgy_ss/brgy_ss8.png",
+        "/brgy_ss/brgy_ss9.png",
+      ],
+      used: [
+        "PHP",
+        "Laravel",
+        "HTML5",
+        "JQuery",
+        "MySQL"
+      ]
+    },
+    {
       title: "Jeepney Fare Collection System",
       desc: "",
       link: "https://github.com/ctespalmado12/jeepney-fare-collection-system",
@@ -65,7 +88,7 @@ const thumbsRefs = useRef([]);
     {
       title: "Water Inventory System",
       desc: "",
-      link: "",
+      link: "https://github.com/ctespalmado12/water-inventory-system",
       imgs: [
         "/water_inventory_ss/water_inventory1.png",
         "/water_inventory_ss/water_inventory2.png",
@@ -80,6 +103,18 @@ const thumbsRefs = useRef([]);
         "/water_inventory_ss/water_inventory11.png",
         "/water_inventory_ss/water_inventory12.png",
         "/water_inventory_ss/water_inventory13.png",
+      ],
+      used: [
+        "Java",
+        "MySQL"
+      ]
+    },
+    {
+      title: "Coffee Shop POS System",
+      desc: "",
+      link: "",
+      imgs: [
+        "/coffee_shop_ss/coffee_shop_ss1.png",
       ],
       used: [
         "Java",
@@ -126,7 +161,7 @@ const BRAND = {
   Java:       "bg-[#F89820] text-black", 
 };
 
-const isEmpty = !myVariable || myVariable.length === 0;
+// const isEmpty = !myVariable || myVariable.length === 0;
 
   return (
     <section id="projects" className="min-h-screen">
@@ -173,7 +208,7 @@ const isEmpty = !myVariable || myVariable.length === 0;
                       <SplideSlide className="relative" key={`p${pIdx}-main-${i}`}>
                         <img className="proj-img" src={src} alt={`${p.title || `Project ${pIdx + 1}`} – ${i + 1}`} loading="lazy" />
                         <div className={cn("view-proj group-active:opacity-100 group-active:pointer-events-auto",)}>
-                          <a  disabled={isEmpty}  aria-disabled href={p.link} target="_blank" className="proj-link">View<ArrowUpRight className="lg:mb-1 lg:mt-2" aria-hidden="true" /></a>
+                          <a aria-disabled href={p.link} target="_blank" className="proj-link">View<ArrowUpRight className="lg:mb-1 lg:mt-2" aria-hidden="true" /></a>
                         </div>
                       </SplideSlide>
                     ))}
