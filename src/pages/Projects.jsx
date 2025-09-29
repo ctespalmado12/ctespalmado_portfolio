@@ -11,7 +11,7 @@ const thumbsRefs = useRef([]);
   const projects = [
     {
       title: "Personal Portfolio",
-      desc: "",
+      desc: "A fully responsive portfolio website featuring dedicated sections for Home, About, Projects, Skills, and Contact, designed to highlight my technical expertise and development experience.",
       link: "https://ctespalmado-portfolio.netlify.app/",
       imgs: [
         "/portfolio_ss/portfolio1.png",
@@ -25,7 +25,7 @@ const thumbsRefs = useRef([]);
     },
     {
       title: "Human Resource Information System",
-      desc: "",
+      desc: "An enterprise-grade HRIS developed at One Document Corporation, providing end-to-end functionality from admin setup and employee management to timekeeping, payroll, and dynamic reporting.",
       link: "",
       imgs: [
         "/hris_ss/hris1.png",
@@ -46,7 +46,7 @@ const thumbsRefs = useRef([]);
     },
     {
       title: "Barangay Appointment System",
-      desc: "",
+      desc: "A capstone project developed in collaboration with my groupmates at the Polytechnic University of the Philippines. The system streamlines barangay services by providing separate portals for administrators, barangay officials, and residents. Users can view available services and officials’ schedules, then book appointments based on time and purpose. Barangay officials can manage and update the statuses of appointments assigned only to their accounts, while administrators oversee all appointments, update statuses (declined, in-process, completed), and generate reports through the system dashboard.",
       link: "",
       imgs: [
         "/brgy_ss/brgy_ss1.png",
@@ -69,7 +69,7 @@ const thumbsRefs = useRef([]);
     },
     {
       title: "Jeepney Fare Collection System",
-      desc: "",
+      desc: "A simple command-line application for managing fare calculations, transactions, and revenue reporting.",
       link: "https://github.com/ctespalmado12/jeepney-fare-collection-system",
       imgs: [
         "/jeep_fare_ss/jeep_fare_1.png",
@@ -87,7 +87,7 @@ const thumbsRefs = useRef([]);
     },
     {
       title: "Water Inventory System",
-      desc: "",
+      desc: "A desktop inventory and POS application built with Java (WindowBuilder) and MySQL for a small water retail store. Supports CRUD for brands and categories, a POS module that records sales, and automatic stock updates to keep inventory accurate in real time.",
       link: "https://github.com/ctespalmado12/water-inventory-system",
       imgs: [
         "/water_inventory_ss/water_inventory1.png",
@@ -111,14 +111,13 @@ const thumbsRefs = useRef([]);
     },
     {
       title: "Coffee Shop POS System",
-      desc: "",
+      desc: "A Java desktop application built with WindowBuilder to manage point-of-sale operations in a coffee shop. Features include menu selection with images, size-based pricing, automatic tax and subtotal calculation, payment method handling, and receipt printing for efficient transaction processing.",
       link: "",
       imgs: [
         "/coffee_shop_ss/coffee_shop_ss1.png",
       ],
       used: [
         "Java",
-        "MySQL"
       ]
     },
     // {
@@ -161,7 +160,6 @@ const BRAND = {
   Java:       "bg-[#F89820] text-black", 
 };
 
-// const isEmpty = !myVariable || myVariable.length === 0;
 
   return (
     <section id="projects" className="min-h-screen">
@@ -193,7 +191,8 @@ const BRAND = {
               // interactive feel
               "active:translate-y-0 active:shadow-sm"
               )}>
-                <div className="proj relative">
+                <div className={cn( "proj relative",
+                  !p.link && "pointer-events-none")}>
                   <Splide
                     ref={(el) => (mainRefs.current[pIdx] = el)}
                     options={{ type:"fade", heightRatio:0.5, pagination:false, arrows:false, cover:true }}
@@ -207,8 +206,24 @@ const BRAND = {
                     {p.imgs.map((src, i) => (
                       <SplideSlide className="relative" key={`p${pIdx}-main-${i}`}>
                         <img className="proj-img" src={src} alt={`${p.title || `Project ${pIdx + 1}`} – ${i + 1}`} loading="lazy" />
-                        <div className={cn("view-proj group-active:opacity-100 group-active:pointer-events-auto",)}>
-                          <a aria-disabled href={p.link} target="_blank" className="proj-link">View<ArrowUpRight className="lg:mb-1 lg:mt-2" aria-hidden="true" /></a>
+                        <div
+                          className={cn(
+                            "view-proj", "group-active:opacity-100 group-active:pointer-events-auto",
+                            
+                          )}
+                        >
+                          <a
+                            href={p.link ?? "#"}
+                            target="_blank"
+                            aria-disabled={!p.link}
+                            onClick={(e) => {
+                              if (!p.link) e.preventDefault();
+                            }}
+                            className="proj-link"
+                          >
+                            View
+                            <ArrowUpRight className="lg:mb-1 lg:mt-2" aria-hidden="true" />
+                          </a>
                         </div>
                       </SplideSlide>
                     ))}
