@@ -47,7 +47,7 @@ const thumbsRefs = useRef([]);
     {
       title: "Barangay Appointment System",
       desc: "A capstone project developed in collaboration with my groupmates at the Polytechnic University of the Philippines. The system streamlines barangay services by providing separate portals for administrators, barangay officials, and residents. Users can view available services and officials’ schedules, then book appointments based on time and purpose. Barangay officials can manage and update the statuses of appointments assigned only to their accounts, while administrators oversee all appointments, update statuses (declined, in-process, completed), and generate reports through the system dashboard.",
-      link: "",
+      link: "https://github.com/ctespalmado12/brgy-appointment",
       imgs: [
         "/brgy_ss/brgy_ss1.png",
         "/brgy_ss/brgy_ss2.png",
