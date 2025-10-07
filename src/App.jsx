@@ -7,6 +7,7 @@ import Skills from './pages/Skills'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import { useEffect, useState } from "react";
+import { MyFooter } from './pages/footer'
 
 // Theme toggle with prefers-color-scheme + localStorage
 function getInitialTheme() {
@@ -37,13 +38,14 @@ function App() {
           <Navbar isLight={isLight} setIsLight={setIsLight}/>
           <div>
             <Home/>
-            <About isLight={isLight}/>
+            <About/>
             <Projects/>
             <Skills/>
             <Contact/>
           </div>
-          
       </div>
+      <MyFooter/>
+
 
     </>
   )

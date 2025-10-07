@@ -6,7 +6,7 @@ import Resume from "../assets/CTE-Resume-2025.pdf";
 import { ScrollTimeline } from "../components/lightswind/scroll-timeline";
 import profileImg from "../assets/portfolio_dp.jpg";
 
-const About = ({isLight}) => {
+const About = () => {
 
     // Safer, memoized download handler
   const dlresume = useCallback(() => {

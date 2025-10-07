@@ -14,7 +14,7 @@ const AnimatedContent = ({
   initialOpacity = 0,
   animateOpacity = true,
   scale = 1,
-  threshold = 0.1,
+  threshold = 0.03,
   delay = 0,
   once = true,
   scroller,

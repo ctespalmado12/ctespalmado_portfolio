@@ -191,7 +191,7 @@ const BRAND = {
               // interactive feel
               "active:translate-y-0 active:shadow-sm"
               )}>
-                <div className={cn( "proj relative",
+                <div className={cn( "proj relative group",
                   !p.link && "pointer-events-none")}>
                   <Splide
                     ref={(el) => (mainRefs.current[pIdx] = el)}
@@ -205,15 +205,16 @@ const BRAND = {
                   >
                     {p.imgs.map((src, i) => (
                       <SplideSlide className="relative" key={`p${pIdx}-main-${i}`}>
-                        <img className="proj-img" src={src} alt={`${p.title || `Project ${pIdx + 1}`} – ${i + 1}`} loading="lazy" />
+                        <img className="proj-img" src={src} alt={`${p.title || `Project ${pIdx + 1}`} – ${i + 1}`} loading="lazy"
+                        />
                         <div
                           className={cn(
-                            "view-proj", "group-active:opacity-100 group-active:pointer-events-auto",
+                            "view-proj z-10 transition group-active:opacity-100 group-active:pointer-events-auto",
                             
                           )}
                         >
                           <a
-                            href={p.link ?? "#"}
+                            href={p.link ?? undefined}
                             target="_blank"
                             aria-disabled={!p.link}
                             onClick={(e) => {
@@ -221,7 +222,7 @@ const BRAND = {
                             }}
                             className="proj-link"
                           >
-                            View
+                            {p.title === "Personal Portfolio" ? "You're already here!" : "View"}
                             <ArrowUpRight className="lg:mb-1 lg:mt-2" aria-hidden="true" />
                           </a>
                         </div>

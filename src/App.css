@@ -41,8 +41,6 @@
   --skills-bg:#fff1f2;
 }
 
-
-
 /* Autofill fix */
 input:-webkit-autofill,
 textarea:-webkit-autofill,
@@ -150,14 +148,16 @@ body{
   text-align: center;
 }
 
- .proj:hover .splide__slide.is-active .proj-img {
-    filter: blur(4px) brightness(.9);
-    transform: scale(1.02);
-  }
 .proj:hover .view-proj{
   opacity: 1;
   pointer-events: auto; 
 }
+
+ .proj:hover .splide__slide.is-active .proj-img {
+    filter: blur(4px) brightness(.9);
+    transform: scale(1.02);
+  }
+
 
 .proj-link {
   @apply inline-flex items-center gap-1 rounded-xl md:rounded-2xl lg:rounded-2xl px-2.5 py-0.5 md:px-3.5 md:py-2 lg:px-3.5 lg:py-2 text-xl lg:text-2xl font-semibold;
@@ -192,3 +192,9 @@ input:focus, textarea:focus{
   background:color-mix(in oklab, var(--skills-bg) 20%, transparent);
   color:var(--text);
 }
+
+footer, .flowbite-footer {
+    background-color: var(--bg) !important;
+    color: var(--text) !important;
+    border: 0 !important;
+  }

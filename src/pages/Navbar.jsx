@@ -30,9 +30,6 @@ const Navbar = ({isLight, setIsLight}) => {
     return () => io.disconnect();
   }, []);
 
-// Current year
-// document.getElementById('year').textContent = new Date().getFullYear();
-
   return (
     <>
       <header
