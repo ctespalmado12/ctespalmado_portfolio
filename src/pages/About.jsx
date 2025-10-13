@@ -99,7 +99,7 @@ const About = () => {
             <div className="xl:order-none">
               
               <AnimatedContent
-                once={false}  
+                once={true}  
                 distance={15}
                 direction="horizontal"
                 reverse={true}
@@ -127,7 +127,7 @@ const About = () => {
             <div className="flex flex-col xl:space-y-6">
               <div className="xl:pb-2 md:pb-4 font-semibold text-xs md:text-sm lg:text-xl animate-[text-animation_1s_ease-in-out_0s_1_normal_none_running]">
                 <AnimatedContent
-                  once={false}  
+                  once={true}  
                   distance={15}
                   direction="horizontal"
                   reverse={false}
@@ -153,7 +153,7 @@ const About = () => {
 
               <div className="xl:pt-2">
                 <AnimatedContent
-                    once={false}  
+                    once={true}  
                     distance={20}
                     direction="vertical"
                     reverse={false}
@@ -167,7 +167,7 @@ const About = () => {
                   <button
                     type="button"
                     onClick={dlresume}
-                    className="inline-flex items-center text-xs md:text-xl lg:text-xl gap-2 rounded-full font-semibold px-4 py-2 border border-[color-mix(in_oklab,var(--text)_12%,transparent)] bg-[color-mix(in_oklab,var(--panel)_90%,transparent)] text-[var(--text)] hover:[box-shadow:var(--ring)] focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--ring-color,theme(colors.blue.500))]"
+                    className="mt-2 lg:mt-0 inline-flex items-center text-xs md:text-xl lg:text-xl gap-2 rounded-full font-semibold px-4 py-2 border border-[color-mix(in_oklab,var(--text)_12%,transparent)] bg-[color-mix(in_oklab,var(--panel)_90%,transparent)] text-[var(--text)] hover:[box-shadow:var(--ring)] focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--ring-color,theme(colors.blue.500))]"
                   >
                     My Resume
                     <ArrowUpRight className="w-4 h-4" aria-hidden="true" />

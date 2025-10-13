@@ -52,7 +52,7 @@ const skills = {
         <section id='skills' className="min-h-screen">
           <div className="w-full mx-auto px-5 sm:px-8 lg:px-16 xl:px-24 py-16 sm:py-24">
             <AnimatedContent
-                    once={false}  
+                    once={true}  
                     distance={15}
                     direction="vertical"
                     reverse={false}
@@ -69,7 +69,7 @@ const skills = {
             <div className="grid justify-center items-center gap-8 space-y-1.5">
               <div className="">
                 <AnimatedContent
-                  once={false}  
+                  once={true}  
                   distance={15}
                   direction="horizontal"
                   reverse={true}
@@ -85,7 +85,7 @@ const skills = {
                   </h3>
                 </AnimatedContent>
                 <AnimatedContent
-                    once={false} 
+                    once={true} 
                     direction="vertical"
                     reverse={false}
                     duration={1.2}
@@ -114,7 +114,7 @@ const skills = {
 
               <div className="">
                 <AnimatedContent
-                  once={false}  
+                  once={true}  
                   distance={15}
                   direction="horizontal"
                   reverse={true}
@@ -131,7 +131,7 @@ const skills = {
                 </AnimatedContent>
                 
                 <AnimatedContent
-                    once={false} 
+                    once={true} 
                     direction="vertical"
                     reverse={false}
                     duration={1.2}
@@ -160,7 +160,7 @@ const skills = {
 
               <div className="">
                 <AnimatedContent
-                  once={false}  
+                  once={true}  
                   distance={15}
                   direction="horizontal"
                   reverse={true}
@@ -177,7 +177,7 @@ const skills = {
                 </AnimatedContent>
                 
                 <AnimatedContent
-                    once={false} 
+                    once={true} 
                     direction="vertical"
                     reverse={false}
                     duration={1.2}
@@ -206,7 +206,7 @@ const skills = {
 
               <div className="">
                 <AnimatedContent
-                  once={false}  
+                  once={true}  
                   distance={15}
                   direction="horizontal"
                   reverse={true}
@@ -222,7 +222,7 @@ const skills = {
                   </h3>
                 </AnimatedContent>
                 <AnimatedContent
-                    once={false} 
+                    once={true} 
                     direction="vertical"
                     reverse={false}
                     duration={1.2}

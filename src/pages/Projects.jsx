@@ -165,7 +165,7 @@ const BRAND = {
       <div className="max-w-auto mx-auto px-5 sm:px-8 lg:px-16 xl:px-24 py-16 sm:py-24">
 
       <AnimatedContent
-        once={false}  
+        once={true}  
         distance={15}
         direction="vertical"
         reverse={false}

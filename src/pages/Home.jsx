@@ -57,7 +57,7 @@ const Home = () => {
                 </div>
                 <div className=' flex items-end justify-center absolute bottom-10 left-0 w-full'>
                     <AnimatedContent
-                        once={false}  
+                        once={true}  
                         distance={20}
                         direction="vertical"
                         reverse={false}
@@ -66,7 +66,7 @@ const Home = () => {
                         initialOpacity={0.01}
                         animateOpacity
                         scale={1.1}
-                        threshold={0}
+                        // threshold={0}
                         delay={0.3}
                     >
                         <div className="flex flex-row items-center justify-center gap-3">
