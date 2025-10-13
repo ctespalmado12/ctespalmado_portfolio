@@ -162,7 +162,7 @@ const About = () => {
                     initialOpacity={0.01}
                     animateOpacity
                     scale={1.1}
-                    threshold={0}
+                    // threshold={0}
                 >
                   <button
                     type="button"

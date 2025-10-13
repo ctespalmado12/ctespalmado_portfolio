@@ -61,7 +61,6 @@ const thumbsRefs = useRef([]);
       ],
       used: [
         "PHP",
-        "Laravel",
         "HTML5",
         "JQuery",
         "MySQL"
