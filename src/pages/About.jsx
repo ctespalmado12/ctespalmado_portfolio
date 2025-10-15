@@ -2,7 +2,7 @@ import React, { useCallback } from "react";
 import AnimatedContent from "../components/react-bits/animatedcontent";
 import DecryptedText from "../components/react-bits/decryptedtext";
 import { ArrowUpRight } from "lucide-react";
-import Resume from "../assets/CTE-Resume-2025.pdf";
+import Resume from "../assets/ClarisseEspalmado-Resume.pdf";
 import { ScrollTimeline } from "../components/lightswind/scroll-timeline";
 import profileImg from "../assets/portfolio_dp.jpg";
 
@@ -12,7 +12,7 @@ const About = () => {
   const dlresume = useCallback(() => {
     const link = document.createElement("a");
     link.href = Resume;
-    link.download = "Clarisse_Espalmado_Resume.pdf";
+    link.download = "CLARISSE-ESPALMADO-RESUME.pdf";
     document.body.appendChild(link);
     link.click();
     link.remove();
@@ -140,11 +140,10 @@ const About = () => {
                   <div>
                     <span className="text-[rgb(144,144,144)] font-semibold text-sm md:text-base lg:text-2xl animate-[text-animation_1s_ease-in-out_0s_1_normal_none_running]">About me.</span>
                     <p className="leading-relaxed text-[15px] md:text-xl lg:text-2xl text-[var(--text,theme(colors.slate.300))]">
-                    Highly motivated Backend Developer with 2 years of hands-on experience in PHP Laravel, JavaScript (jQuery),
-                    and MySQL, seeking a challenging role to contribute to the development of reliable and scalable web
-                    applications. Skilled in backend development, bug resolution, and dynamic web-based reporting. Currently
-                    expanding frontend capabilities through self-learning and hands-on practice with Tailwind CSS and React.js,
-                    while continuously improving knowledge in modern development practices and backend optimization. Let&apos;s connect.
+                    Detail-oriented Web Developer with 2 years of hands-on experience in building and maintaining web applications using PHP (Laravel), JavaScript (jQuery), and MySQL.
+                     Proven ability to enhance system functionality and user satisfaction by resolving bugs, optimizing backend logic, and implementing customizable features. 
+                     Currently expanding expertise in Tailwind CSS and React.js to strengthen front-end proficiency. Passionate about leveraging technical and analytical skills to drive innovation, 
+                     improve performance, and deliver seamless user experiences within a collaborative team environment. Let&apos;s connect.
                     </p>
                   </div>
                   
