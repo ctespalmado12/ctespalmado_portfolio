@@ -2,7 +2,8 @@ import React, { useCallback } from "react";
 import AnimatedContent from "../components/react-bits/animatedcontent";
 import DecryptedText from "../components/react-bits/decryptedtext";
 import { ArrowUpRight } from "lucide-react";
-import Resume from "../assets/ClarisseEspalmado-Resume.pdf";
+// import Resume from "../assets/ClarisseEspalmado-Resume.pdf";
+import Resume from "../assets/CTE-RESUME-2026.pdf";
 import { ScrollTimeline } from "../components/lightswind/scroll-timeline";
 import profileImg from "../assets/portfolio_dp.jpg";
 
@@ -140,7 +141,7 @@ const About = () => {
                   <div>
                     <span className="text-[rgb(144,144,144)] font-semibold text-sm md:text-base lg:text-2xl animate-[text-animation_1s_ease-in-out_0s_1_normal_none_running]">About me.</span>
                     <p className="leading-relaxed text-[15px] md:text-xl lg:text-2xl text-[var(--text,theme(colors.slate.300))]">
-                    Detail-oriented Web Developer with 2 years of hands-on experience in building and maintaining web applications using PHP (Laravel), JavaScript (jQuery), and MySQL.
+                    Detail-oriented Web Developer with 2+ years of hands-on experience in building and maintaining web applications using PHP (Laravel), JavaScript (jQuery), and MySQL.
                      Proven ability to enhance system functionality and user satisfaction by resolving bugs, optimizing backend logic, and implementing customizable features. 
                      Currently expanding expertise in Tailwind CSS and React.js to strengthen front-end proficiency. Passionate about leveraging technical and analytical skills to drive innovation, 
                      improve performance, and deliver seamless user experiences within a collaborative team environment. Let&apos;s connect.
