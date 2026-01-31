@@ -3,7 +3,7 @@ import AnimatedContent from "../components/react-bits/animatedcontent";
 import DecryptedText from "../components/react-bits/decryptedtext";
 import { ArrowUpRight } from "lucide-react";
 // import Resume from "../assets/ClarisseEspalmado-Resume.pdf";
-import Resume from "../assets/cte-resume-013026.pdf";
+import Resume from "../assets/cte-resume-013126.pdf";
 import { ScrollTimeline } from "../components/lightswind/scroll-timeline";
 import profileImg from "../assets/portfolio_dp.jpg";
 
@@ -74,15 +74,16 @@ const About = () => {
     },
     {
         year: '2023 - Present',
-        title: 'Web Developer | Core HRIS Developer',
+        title: 'Full Stack Web Developer',
         subtitle: 'One Document Corporation',
         bullets: [
-          "Built, maintained, and deployed web applications using PHP Laravel, jQuery, and MySQL",
+          "Built and maintained web applications using PHP Laravel, Javascript(jQuery), MySQL, HTML, CSS, and Bootstrap",
           "Resolved bugs and improved system functionality based on issue logs",
           "Designed and implemented customizable file viewing and printing features",
           "Wrote and optimized stored procedures to support backend processes",
           "Created and deployed scalable RESTful APIs",
-          "Collaborated with a small backend team, following GitHub version control workflows"
+          "Configured server applications and dependencies to ensure a streamlined deployment process",
+          "Collaborated within a 2-person developer team, following GitHub version control workflows"
         ]
     },
     
