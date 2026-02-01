@@ -3,7 +3,7 @@ import AnimatedContent from "../components/react-bits/animatedcontent";
 import DecryptedText from "../components/react-bits/decryptedtext";
 import { ArrowUpRight } from "lucide-react";
 // import Resume from "../assets/ClarisseEspalmado-Resume.pdf";
-import Resume from "../assets/cte-resume-013126.pdf";
+import Resume from "../assets/cte-resume-020126.pdf";
 import { ScrollTimeline } from "../components/lightswind/scroll-timeline";
 import profileImg from "../assets/portfolio_dp.jpg";
 
